@@ -1,0 +1,2379 @@
+{
+  "version" : "1.0.1",
+  "name" : "payment-maven",
+  "number" : "2.0.0",
+  "buildAgent" : {
+    "name" : "Maven",
+    "version" : "3.9.1"
+  },
+  "agent" : {
+    "name" : "/",
+    "version" : "3.9.1"
+  },
+  "started" : "2023-10-26T14:44:44.599+0200",
+  "durationMillis" : 241605,
+  "vcs" : [ ],
+  "modules" : [ {
+    "properties" : {
+      "maven.compiler.target" : "1.8",
+      "maven.compiler.source" : "1.8",
+      "project.build.sourceEncoding" : "UTF-8",
+      "daversion" : "3.7-SNAPSHOT"
+    },
+    "type" : "maven",
+    "id" : "org.jfrog.test:multi2:3.7-SNAPSHOT",
+    "repository" : "payment-maven-dev-virtual",
+    "artifacts" : [ {
+      "type" : "jar",
+      "sha1" : "9baacb13e5f655410875f8e70c98fd4cc51c4c82",
+      "sha256" : "a7b67353ad70b358767582cedb3e1fe52285deae72ab4da8829fd9f84bc64d7c",
+      "md5" : "f5486e6e4a4771e6ceaba2cf57d72f51",
+      "name" : "multi2-3.7-SNAPSHOT.jar",
+      "path" : "org/jfrog/test/multi2/3.7-SNAPSHOT/multi2-3.7-SNAPSHOT.jar"
+    }, {
+      "type" : "pom",
+      "sha1" : "3ca081e90153688def572484981b03fdaeeafee9",
+      "sha256" : "62504cd9157d0781f7abbb1b6345ded014550f4db43bdbf0a9e4258c5c438cd4",
+      "md5" : "efadcdf3f04ac0c5d2e1437a59a4dd39",
+      "name" : "multi2-3.7-SNAPSHOT.pom",
+      "path" : "org/jfrog/test/multi2/3.7-SNAPSHOT/multi2-3.7-SNAPSHOT.pom"
+    } ],
+    "dependencies" : [ {
+      "type" : "jar",
+      "sha1" : "7fcfa59c5533abb41f86b1408960737eeaf1f49f",
+      "sha256" : "56616c9350b3624f76cffef6b24ce7bb222915bfd5688f96d3cf4cef34f077cb",
+      "md5" : "5889138d49d65cd1be3a228b73abc485",
+      "id" : "org.junit.jupiter:junit-jupiter-engine:5.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "cdcff33940d9f2de763bc41ea05a0be5941176c3",
+      "sha256" : "3624f8474c1af46d75f98bc097d7864a323c81b3808aa43689a6e1c601c027be",
+      "md5" : "fbcf58513bc25b80f075d812aad3e3cf",
+      "id" : "org.slf4j:slf4j-api:1.7.32",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "bf35adef93978c3e8458e4e12a3c220641e8b461",
+      "sha256" : "5f94c817e3322badf5ce3985fa194da0966cace677d88a5259db28f18f75826f",
+      "md5" : "fe84062fafc1075091d6a5b09190c57e",
+      "id" : "org.springframework.boot:spring-boot-starter-test:2.4.4",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "119ea2b2bc205b138974d351777b20f02b92704b",
+      "sha256" : "d5be94d65e87bd219fb3193ad1517baa55a3b88fc91d21cf735826ab5af087b9",
+      "md5" : "bb811ca86cba6506cca5d415cd5559a7",
+      "id" : "com.google.guava:guava:31.0.1-jre",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3",
+      "sha256" : "a310bc79c3f4744e2b2e993702fcebaf3696fec0063643ffdc6b49a8fb03ef39",
+      "md5" : "9139a7742b3a752179d233f551b145ae",
+      "id" : "org.skyscreamer:jsonassert:1.5.0",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e9a005b27f06531f820687a682726a5d2fe565b9",
+      "sha256" : "61825d9cb449f2fe1b9b7dd53bbb9cb0ef1e2a8c39cc64f0ea70c446c7e3f35e",
+      "md5" : "583fae18d7ec55d516a6e884495cce31",
+      "id" : "io.smallrye.config:smallrye-config-core:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a7261dff44e64aea7f621842eac5977fd6d2412d",
+      "sha256" : "ce7b985bc469e2625759a4ebc45533c70581a05a348278c1d6408e9b2e35e314",
+      "md5" : "69395a5e457e37765d4fbbbb5f2d5a18",
+      "id" : "org.junit.jupiter:junit-jupiter-api:5.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "38392ae406009e55efe873baee4633bfa6b766b3",
+      "sha256" : "1f805f990961be541a4465978487e1cd35cdb078e8a8ec17ebf1553fecad2657",
+      "md5" : "5f59aa2d12ca0a79705f830b3b1b16d5",
+      "id" : "org.springframework.boot:spring-boot:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "dc05b8178674edd0c45b7842644b31e22dc1f4f2",
+      "sha256" : "12ff3eae092bf07f6651a93b9292a87fbee7f5b9ad4c9cc01189b1a4f0979973",
+      "md5" : "d50df715121fa262bf005f2dd6ab4393",
+      "id" : "io.projectreactor:reactor-core:3.4.12",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-core:3.1.6", "org.springframework.cloud:spring-cloud-function-context:3.1.6", "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d22cd712db8f1696bc422da54fc5a0f94ee832a6",
+      "sha256" : "96ef349d5fb414f6c327566ba84e693d30e88a30b79a2226087623b43b1c895b",
+      "md5" : "20f7df11b783853b6e12ae5645c7c52f",
+      "id" : "io.smallrye.reactive:mutiny-smallrye-context-propagation:1.0.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8fcc8bc1e54896769d7c021f371c47654754fda6",
+      "sha256" : "7bc73c97fe5179feadcb7805f466cabc07ad405995a0eb981ee7626d31651ad8",
+      "md5" : "3c77fc2cf10c13bd89b07ede49750adc",
+      "id" : "io.smallrye:smallrye-context-propagation-api:1.2.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye:smallrye-context-propagation:1.2.0", "io.quarkus:quarkus-smallrye-context-propagation:2.2.3.Final", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0db03cafeca548adaf564f5e53d8030f8687e1db",
+      "sha256" : "3c3441ed544c29413d3c8165f4863681b1babbc976678aa86a168da1514a0f9f",
+      "md5" : "a861bc1b5a962090b8ec180519a5b4bf",
+      "id" : "io.smallrye.reactive:smallrye-mutiny-vertx-auth-common:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "9721511690817aa48524528dfe63008be3ff157a",
+      "sha256" : "f3db30f23410ab7f971cc6c0807c490def8b96751dafe694250c6e1971fd9e95",
+      "md5" : "33d15c54e7f9eabd584efe48796d3bdc",
+      "id" : "io.vertx:vertx-codegen:4.1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:vertx-mutiny-generator:2.13.0", "io.smallrye.reactive:smallrye-mutiny-vertx-core:2.13.0", "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a849f74bda42b709355011cf7c3e19f0ab672588",
+      "sha256" : "21d8cd126b56e5afb5bdf0fbbc3201806131d77b47507f4f29f2343ae6429145",
+      "md5" : "fe930fc37e0e6c5bcba752c2bedcb2de",
+      "id" : "io.netty:netty-codec-dns:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.netty:netty-resolver-dns:4.1.67.Final", "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "28c11eb91f9b6d8e200631d46e20a7f407f2a046",
+      "sha256" : "58812de60898d976fb81ef3b62da05c6604c18fd4a249f5044282479fc286af2",
+      "md5" : "45c9a837c21f68e8c93e85b121e2fb90",
+      "id" : "org.opentest4j:opentest4j:1.2.0",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter-api:5.7.1", "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ba035118bc8bac37d7eff77700720999acd9986d",
+      "sha256" : "21af30c92267bd6122c0e0b4d20cccb6641a37eaf956c6540ec471d584e64a7b",
+      "md5" : "5fa4ec4ec0c5aa70af8a7d4922df1931",
+      "id" : "com.google.j2objc:j2objc-annotations:1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e2a0c27f396035fab7d932031d6f337244369495",
+      "sha256" : "539d38184abdfa849f54f6505ca9d58f227da325830af2d4b68a818fb82509ad",
+      "md5" : "30fe667e25149b34bd42d741272fd07d",
+      "id" : "io.netty:netty-codec-http2:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-netty:2.2.3.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "74f85536cf7667df521edbbc8d31114553fae895",
+      "sha256" : "a38a76ce24363e1c07467f628e87f7d47a3034b93e83fa3a83ac3a75917a11e3",
+      "md5" : "b691d6e195cb859a70b3b8a8051a1b4d",
+      "id" : "io.quarkus:quarkus-jackson:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault-model:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fec5797a55b786184a537abd39c3fa1449d752d6",
+      "sha256" : "26af661e5c37cfe233cdec402e8a5c0bd112e03d3b6cf12b0d9db7ee7f6fbdd9",
+      "md5" : "b15b1def49daaf7e74fffcce9442ba98",
+      "id" : "org.apache.logging.log4j:log4j-api:2.10.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.apache.logging.log4j:log4j-core:2.10.0", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7c4f3c474fb2c041d8028740440937705ebb473a",
+      "sha256" : "fb53f8539e7fcb8f093a56e138112056ec1dc809ebb020b59d8a36a5ebac37e0",
+      "md5" : "64f7a68f931aed8e5ad8243470440f0b",
+      "id" : "ch.qos.logback:logback-classic:1.2.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-logging:2.4.4", "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "934c04d3cfef185a8008e7bf34331b79730a9d43",
+      "sha256" : "e04ba5195bcd555dc95650f7cc614d151e4bcd52d29a10b8aa2197f3ab89ab9b",
+      "md5" : "2ab1973eefffaa2aeec47d50b9e40b9d",
+      "id" : "javax.annotation:javax.annotation-api:1.3.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5d117d99750c2f4b53a5b49aaa4fce182d7b128c",
+      "sha256" : "6c4642353e0390254c744b787b0a567d0a68f8ecfb84b50e4cf0666564a1e4a1",
+      "md5" : "7488167caa7992717567052ce88c6378",
+      "id" : "org.eclipse.microprofile.config:microprofile-config-api:2.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ee3db82d956ee22c4f1f2df9c611e048e79a4a43",
+      "sha256" : "f1524fc9d7ed3afc87d365ab0d280ef260c8dd1836435689e8300fd5a51ed178",
+      "md5" : "65ea45ee652a89f43a9a06bd8f0e5139",
+      "id" : "org.jboss.logging:jboss-logging-annotations:2.2.1.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "6793c8a926b4bee18d22ff7d3ad7daaafa16dd68",
+      "sha256" : "01585c04595e93570407151d6dc1af0ddc5ce13b21963370ea5cd3d1ce8e5524",
+      "md5" : "7e85d0435efb251ef5b8cb938ce02c68",
+      "id" : "io.smallrye.reactive:smallrye-mutiny-vertx-web-common:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "6f81b3c053433a8a40a378d2b4f056c5c31e50ff",
+      "sha256" : "8effdd7f8a4ba5558b568184dee08008b2443c86c673ef81de5861fbc7ef0613",
+      "md5" : "99c60487a3d01dda353e34894f6b0720",
+      "id" : "org.junit.jupiter:junit-jupiter-params:5.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e532a163d2245a2b25f0250fa8c90eb713e14804",
+      "sha256" : "e8b4059c71f91421ab043704e6d42fb9430da7c08351832a8de6e700d5b3f481",
+      "md5" : "4c0deb306476f0cdfb833b33a2dfccfc",
+      "id" : "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "48f12deaae83a8dfc3775d830c9fd60ea59bbbca",
+      "sha256" : "cdb3d038c188de6f46ffd5cd930be2d5e5dba59c53b26437995d534e3db2fb80",
+      "md5" : "712a73c2f496ab26736fd3f8029bac20",
+      "id" : "org.objenesis:objenesis:3.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.mockito:mockito-core:3.6.28", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a86a19033588a07e159ff95818845b1ec86b2281",
+      "sha256" : "60f3c1fba9125566428e3fe67f53f3084ffabcdae24c8a0dc9a225bad4ce77ca",
+      "md5" : "cf29efccb9349638a5357c4544767b27",
+      "id" : "io.netty:netty-common:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "48e3b9cfc10752fba3521d6511f4165bea951801",
+      "sha256" : "c04539f472e9a6dd0c7685ea82d677282269ab8e7baca2e14500e381e0c6cec5",
+      "md5" : "61286918ca0192e9f87d1358aef718dd",
+      "id" : "jakarta.xml.bind:jakarta.xml.bind-api:2.3.3",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d58bebff8cbf70ff52b59208586095f467656c30",
+      "sha256" : "bbcbfdaa72572255c4f85207a9bfdb24358dc993e41252331bd4d0913e4988b9",
+      "md5" : "f2c78cb93d70dc5dea0c50f36ace09c1",
+      "id" : "org.slf4j:jul-to-slf4j:1.7.30",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-logging:2.4.4", "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "1bc3c05b42265626de8f4c6fe6b854db41a61de9",
+      "sha256" : "2f6532810afa52410919e7e0ea1dab40d029ceee452d5e2bb9ccb91cd57b22fa",
+      "md5" : "1e10e22919cdd9cf7b1b82a6f892c57c",
+      "id" : "io.quarkus:quarkus-vault:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ce6042492f042131f602bdc83fcb412b142bdac5",
+      "sha256" : "25efd823c10f3afbe1b65efe97370def475d202dd91477f66eb5685e746e2819",
+      "md5" : "731eee1b78fa01375de10fd95b84455d",
+      "id" : "org.springframework:spring-context:5.3.14",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fbadfc6fda98ed91ac3807a81614b7639a54ac76",
+      "sha256" : "7d4b176a6fdadf83a5cd3cdc0b96ed75377129b31a3499aee4dd0f6f43e567d6",
+      "md5" : "28514368aa5a4ee27037ca350fb8aec5",
+      "id" : "io.smallrye.common:smallrye-common-expression:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "51ae921a2ed1e06ca8876f12f32f265e83c0b2b8",
+      "sha256" : "8be6935cd8f9673ac684a589aaa1caecd57dee7c37ed1443d17924325799003d",
+      "md5" : "b5cf9290dc96e215e77f274794d5238e",
+      "id" : "com.fasterxml.jackson.core:jackson-core:2.13.1",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c005a2ed3ec1a4371e49d148e78e3d780bd5bcaf",
+      "sha256" : "2e11536d4667402d30befdbb050bba992a12eb9d95303d546038a37d848a92a6",
+      "md5" : "0b43884599443efa10410c50376f271b",
+      "id" : "org.springframework.cloud:spring-cloud-function-core:3.1.6",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-context:3.1.6", "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4d014eac96329c70175116b185749765cee0aad5",
+      "sha256" : "03cb08647d16dda7e85b0c487881cfac20f49ec398e1411a2a747c5fdb217672",
+      "md5" : "bfcbf0029613dc87303aa34dcfd5feb3",
+      "id" : "org.xmlunit:xmlunit-core:2.7.0",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d1d68e6663accbacacada155d99c550406821d06",
+      "sha256" : "d08223205680f1d85eb5801a845bba561679ba0b8e1ba6be7032e58ead620684",
+      "md5" : "74c8e7162543b7bd82afd857b938f75b",
+      "id" : "io.smallrye.reactive:vertx-mutiny-generator:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-core:2.13.0", "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "de955f92b5aec9d254e04995b83819a9d2c3b853",
+      "sha256" : "d57e5eec16e195c6629711a18b7bd0923f44b501c73c80dc02fdd4fd165f7a89",
+      "md5" : "4094c7d9d8b219bcb889adcfc7c41773",
+      "id" : "io.quarkus:quarkus-core:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c90b597163cd28ab6d9687edd53db601b6ea75a1",
+      "sha256" : "22b58febab566eddd5d4863f09dad4d5cc57677b6d4be745e3c6ce547124a66d",
+      "md5" : "dc99011f047e63dcc741b5ab68d116db",
+      "id" : "org.apache.logging.log4j:log4j-core:2.10.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c461293daf33fbb5e7e533a8b3408b840927f418",
+      "sha256" : "4fc7baa153844a0728bab56a6114c9f3a7e02f3aa419ce141667ce8e29b624e3",
+      "md5" : "896fd0732a5c301b78c00e99168b2313",
+      "id" : "io.vertx:vertx-web-common:4.1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-web-client:4.1.3", "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "6237b28c1bad51b175e5b91222292924322fda54",
+      "sha256" : "6d17db0d2662edf413020165f5cd955eecdd0f506973b57144055f69873b0f2d",
+      "md5" : "fd7a72aa27d283bebb9ace6b7a84525d",
+      "id" : "org.springframework.boot:spring-boot-autoconfigure:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "864344400c3d4d92dfeb0a305dc87d953677c03c",
+      "sha256" : "5946d837fe6f960c02a53eda7a6926ecc3c758bbdd69aa453ee429f858217f22",
+      "md5" : "841fc80c6edff60d947a3872a2db4d45",
+      "id" : "ch.qos.logback:logback-core:1.2.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "ch.qos.logback:logback-classic:1.2.3", "org.springframework.boot:spring-boot-starter-logging:2.4.4", "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "70d775617131bfd87370f590c94c55319f7964ff",
+      "sha256" : "9ee2af9255015dd9ab272e47e0f33fba2d496e9f78c8af19bd39870d00d0f5e7",
+      "md5" : "c20502098d5dce1576773ce6ea76f7b1",
+      "id" : "org.springframework:spring-jdbc:5.3.13",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "19b868c383251f041e0d5fad4f7bfed8cb78847e",
+      "sha256" : "339b9d1a6a6fd02a2bacf1f9f64a5525cdf914598301103db15c4d35cd4168c8",
+      "md5" : "8fbcfb389c6db1e1eac19dfbac0a3e85",
+      "id" : "io.smallrye.config:smallrye-config-common:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "327aa3107e27795587c662baacc87c91f6373a2d",
+      "sha256" : "abcede52cbfb0bbb8e4f50d9614d794728a5547fee6d2dad25c02cda0f13264a",
+      "md5" : "190288a4d4e139ba08f5b7d611b74e11",
+      "id" : "io.netty:netty-codec-haproxy:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "bb9041d5f85f9a6270f5378d0becd243de8cfeac",
+      "sha256" : "7c47abc3085d14c38b128846164df77929fe5119f368c8b14bda401bff537f9b",
+      "md5" : "ea2c79d85317dce3e96b7e65d4f4ee2d",
+      "id" : "io.netty:netty-resolver:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fc9dff4bb36d627bdc553de77e1f17efd790876c",
+      "sha256" : "a9aae9ff8ae3e17a2a18f79175e82b16267c246fbbd3ca9dfbbb290b08dcfdd4",
+      "md5" : "944805817b648e558ed6be6fc7f054f3",
+      "id" : "org.apiguardian:apiguardian-api:1.1.0",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter-api:5.7.1", "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a4fe0487451dc262daaa024224fa207d088b8687",
+      "sha256" : "2e2eb2d9cf8ef043d8a9bef58a2e33cb1f149a477cf24b610660bc5b727ac12a",
+      "md5" : "fd8106bc93011dccbb4f669d91a7f371",
+      "id" : "io.netty:netty-codec-socks:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.netty:netty-handler-proxy:4.1.67.Final", "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "46d5b17817fb0a4867b5ed7d22495d3626eeef89",
+      "sha256" : "a820350254f875f195d2c7779041d145948009b8a748185ece398bf0b7987223",
+      "md5" : "6c493cb96257607a27d5fc11591bf74b",
+      "id" : "io.smallrye.common:smallrye-common-constraint:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d276a968c57f5d60a421dedd1f8b6ca2fae09e86",
+      "sha256" : "37df5a9cd6dbc1f754ba2b46f96b8874a83660e1796bf38c738f022dcf86c23f",
+      "md5" : "c039039577212197d235e0d30d991c31",
+      "id" : "org.junit.platform:junit-platform-engine:1.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter-engine:5.7.1", "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4432cf056309ece02eb23417bc70f96b59ac8c24",
+      "sha256" : "bee98dcd35af29cdfbce09f519d7b837aa19ea998e9e388bd87441e956f1d445",
+      "md5" : "dad5c6a4b3409a40aef9e3f53d6c52fd",
+      "id" : "org.springframework.boot:spring-boot-starter-logging:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "359d62567480b07a679dc643f82fc926b100eed5",
+      "sha256" : "7e7cce6740ed705bfdfaac7b442c1375d2986d2f2935936a5bd40c14e18fd736",
+      "md5" : "466ff09da784f9f21b2e6bf3b486a8cd",
+      "id" : "org.yaml:snakeyaml:1.27",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "1820c0968dba3a11a1b30669bb1f01978a91dedc",
+      "sha256" : "5e62846a89f05cd78cd9c1a553f340d002458380c320455dd1f8fc5497a8a1c1",
+      "md5" : "10b47e837f271d0662f28780e60388e8",
+      "id" : "org.hamcrest:hamcrest:2.2",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e8b21439df8e2cc588dce4a257ba82cdd74f7b87",
+      "sha256" : "a3e1165891b60ed4e3d0e5b6132ffb8811466f5e3be6300257122f18acaede31",
+      "md5" : "ae35148d476fe221953c123d65b6c769",
+      "id" : "io.smallrye.config:smallrye-config:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "58f497f362cd19c2f8842d75c491d270f0600e7f",
+      "sha256" : "e71bbe0e4cacfce5b7d609021344d883531aa3e19321db17390f849fdb04a509",
+      "md5" : "ff8956b6aa6e32e6f9064597d9c9f1bd",
+      "id" : "jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "765a4401ceb2dc8d40553c2075eb80a8fa35c2ae",
+      "sha256" : "60441c74fb64e5a480070f86a604941927aaf684e2b513d780fb7a38fb4c5639",
+      "md5" : "29169b4b1115bc851e5734ef35ecd42a",
+      "id" : "com.jayway.jsonpath:json-path:2.4.0",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5f1c0e3f5082c21f6b4964b97fe5b1d5f8c42f53",
+      "sha256" : "1470840f56dee84303b0a81202c4b47f4b54815e9731e44cddb81c38df5e6d4d",
+      "md5" : "5caba5010589a8455cb37317d674f82f",
+      "id" : "org.jboss.slf4j:slf4j-jboss-logmanager:1.1.0.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d1e38fe8e668f228b0761d80a6c80c151ab6044a",
+      "sha256" : "6458253a16d4dcef4749860e61ba2959014e39d5af9d3286bc9b8318d2ba4047",
+      "md5" : "d53cf8c0bba8c67b45e7b181b227b820",
+      "id" : "net.jodah:typetools:0.6.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-context:3.1.6", "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "87c4e9a3302f0fafe4e5587f9c27d22847d8fe00",
+      "sha256" : "d1336fe625a5b030fe99227a721e890a559e43efe0ac05a8bcf7a5e5f8bc6432",
+      "md5" : "812f2c571f7006e0b6788e23aff7e1ec",
+      "id" : "com.fasterxml.jackson.module:jackson-module-parameter-names:2.12.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-jackson:2.2.3.Final", "io.quarkus:quarkus-vault-model:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f744b95bbaaf0d1ea2b063a15a3c5ce275919f39",
+      "sha256" : "0bc2981d170e10716363a39b8fbadea9bb5d77de6b52f217086a4e4a0f9f0d3b",
+      "md5" : "38428cad4ac1cf755135dabd4e2cb864",
+      "id" : "io.smallrye.common:smallrye-common-classloader:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "496b9194df9f632884ea1144201776be348669e6",
+      "sha256" : "a743d6b1020cb58d0a9ffe7ede32ef134734d2315d29b2a0a0c2ce3363fca6e7",
+      "md5" : "f8ffb44da68bbe64783943c0a06f65f4",
+      "id" : "org.jboss.threads:jboss-threads:3.4.2.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a9b4c1ed776ae5f8d89fe661060c60ca7106e4ce",
+      "sha256" : "129c9b2539da51eac6f5c3975f985a96db50215307273d08b26f5a6f89102fcc",
+      "md5" : "e61efeaea609f9ec8a438e5307fbbda6",
+      "id" : "io.quarkus:quarkus-vertx-core:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4b6217b05792fe6e2bd080c054138b2c20ae1b37",
+      "sha256" : "9f7621838eddae098428310067fbdfe584ec71eb42b34397a18480801b75c6ce",
+      "md5" : "939e9a71ba2b13b51cb3097149eb70a5",
+      "id" : "io.netty:netty-buffer:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.netty:netty-codec-haproxy:4.1.67.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e8efc0f2ab4ec6b31bd8474a4a4d834965e4e8e9",
+      "sha256" : "1576e21f3bf9cc3a3092e7cd40e9c9fef70532223af98a9218c1c9c885a71251",
+      "md5" : "e830dad034ed760dea05d1f5bbd16d28",
+      "id" : "org.eclipse.microprofile.context-propagation:microprofile-context-propagation-api:1.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:mutiny-smallrye-context-propagation:1.0.0", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5c93806d9c73a8819b4229e1d1f3906b2d3e1ccb",
+      "sha256" : "c103322a09ab5322ff9b5de28c80f00b257bca5748828a04a13b131d6f475e27",
+      "md5" : "d63a3d5f229de8db968620c6dd1d3f96",
+      "id" : "io.quarkus:quarkus-vault-model:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0045978ade4d8773d489d8f3397037d0fa04d111",
+      "sha256" : "265c0f85f5ac8c38a3dd01f3c288c11ce0d200b0ba214fe5240987cce0322cc4",
+      "md5" : "8fdd09515b4b8498246972a0bd8a8ef4",
+      "id" : "io.smallrye.reactive:smallrye-mutiny-vertx-core:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4b7346f190d6a6f4b983bc23d1f0145c2ff2dbb7",
+      "sha256" : "492bf11ca5a96fb2f12c39a6ba6b2157f192907587ef51a38f683237cb0f7e2e",
+      "md5" : "d281e305a04dedf99c98302a05dc5a7d",
+      "id" : "org.springframework:spring-tx:5.3.13",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework:spring-jdbc:5.3.13", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fd86b6400f463b7e36e24e70f0b2beb8665da182",
+      "sha256" : "e00c9a92adb54d3c3c9c3616af42ef5061e6f7ce0fdb9938a0d668d5610d30a4",
+      "md5" : "d9bed85ddc8b9690ea3eb2521e590a07",
+      "id" : "io.quarkus:quarkus-mutiny:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "966f6fd1af4959d6b12bfa880121d4a2b164f857",
+      "sha256" : "9624e9aaf60b1875adde33d8e7997de110b70be09e94e55ad8fc39637ec002c4",
+      "md5" : "bafb53f0385a82d4f9c1145917908736",
+      "id" : "org.apache.logging.log4j:log4j-to-slf4j:2.13.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-logging:2.4.4", "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "007396407491352ce4fa30de92efb158adb76b5b",
+      "sha256" : "903f48c8aa4c3f6426440b8d32de89fa1dc23b1169abde25e4e1d068aa67708b",
+      "md5" : "f2a921d4baaa7308de04eed4d8d72715",
+      "id" : "net.minidev:json-smart:2.3",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "com.jayway.jsonpath:json-path:2.4.0", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "aaa02680dd92a568a4278bb40aa4a6305f632ec0",
+      "sha256" : "721aba451a5b1019986d38c728327173b116d961c637cae15aedcf524baddfd5",
+      "md5" : "648566304bfb8ec4136fa2c7f0ace564",
+      "id" : "org.assertj:assertj-core:3.18.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fb2de09a03a9fdf9107fd918dddaf829b6b29c57",
+      "sha256" : "71678856fc61440dedd5bc92e5b24052af957df98aa8448e335f449f069b04b0",
+      "md5" : "c5c782ecca68c9dff34122d3386dcfcd",
+      "id" : "io.vertx:vertx-core:4.1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "b421526c5f297295adef1c886e5246c39d4ac629",
+      "sha256" : "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99",
+      "md5" : "d094c22570d65e132c19cea5d352e381",
+      "id" : "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0b3ace62035ec1d9a717d7cba255484c4b083b82",
+      "sha256" : "e1edfaef58a1a78238984e650d9e10d6cd745b647074d099d067e9219bae744a",
+      "md5" : "375badfeac83015af9a378ea4e10aeba",
+      "id" : "org.springframework.cloud:spring-cloud-function-web:3.1.6",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a6f3d634a1a648e68824d5edcebf14b368f8db1b",
+      "sha256" : "ef900b2fb59aead2847974d5563da79d5b13b5eb8c0dbf203fe5cd9a69e5c4ab",
+      "md5" : "db99d732bab1d4b30f35dee56728f886",
+      "id" : "org.graalvm.sdk:graal-sdk:21.2.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d620839fc595dceb83b276aca911c9780cf2f55e",
+      "sha256" : "79cbd39bed7bbb9de847ee1d2f9de9b52c2ecf1bd9f516a7359ef5a1e2fdeaa8",
+      "md5" : "ad2efd17e4dbb32e717ca29c4cccf42d",
+      "id" : "io.quarkus:quarkus-arc:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f311ab94bb1d4380690a53d737226a6b879dd4f1",
+      "sha256" : "47ae0a91fb6dd32fdaa5d9bda63df043ac8148e00c297ccce8ab9c56b95cf261",
+      "md5" : "528ed6138395d22fb54912b2b889e88e",
+      "id" : "jakarta.el:jakarta.el-api:3.0.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "b1174c05d4ded121a7eaeed3f148709f9585b981",
+      "sha256" : "af5a384d020e43f91f56d083f170d67aaf5aead71fa8fa1ad80a425b13ba13e4",
+      "md5" : "0ab0ba0ba9299d74c36a7c60c26f6b99",
+      "id" : "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault-model:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "b9d07ee38cf1c0787ab072a156bd587e6f8a144e",
+      "sha256" : "19a243b87ed6c30c4cd086afeec76ff5af0cb1e5779d6b9af257e97f830e713a",
+      "md5" : "d0bcf4864d382fcd300e968adfaf2a85",
+      "id" : "io.quarkus:quarkus-bootstrap-runner:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d9fb7a7926ffa635b3dcaa5049fb2bfa25b3e7d0",
+      "sha256" : "1dee0481072d19c929b623e155e14d2f6085dc011529a0a0dbefc84cf571d865",
+      "md5" : "69122b098fff1c6b1bf2cd3b355e7e03",
+      "id" : "org.reactivestreams:reactive-streams:1.0.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:mutiny:1.0.0", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c592b500269bfde36096641b01238a8350f8aa31",
+      "sha256" : "0c7c265d62fc007124dc32b91336e9c4272651d629bc5fa1a4e4e3bc758eb2e4",
+      "md5" : "c28b871d258b4d347559d2eb7ecec4a3",
+      "id" : "net.minidev:accessors-smart:1.2",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "net.minidev:json-smart:2.3", "com.jayway.jsonpath:json-path:2.4.0", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5cd4c568522b7084afac5d2ac6cb945b797b3f16",
+      "sha256" : "f196833d5bca28b12fbb4ae3265c0f0c4dc9fb4c726b3bfc4cabcc129cd21cf7",
+      "md5" : "1d268dba90b89964d97254bae133a431",
+      "id" : "org.springframework:spring-expression:5.3.14",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework:spring-context:5.3.14", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "289d8047f7cc524d60ca0c4cc6fedb8cb003e02d",
+      "sha256" : "2fc52811a5a8bb5684957ba67ab5642d39833be624f2507e2577707e737670b2",
+      "md5" : "444211b4b18cfd7b4b981433e00b8c91",
+      "id" : "org.springframework:spring-beans:5.3.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e517b8a93dd9962ed5481345e4d262fdd47c4217",
+      "sha256" : "804d824c9144561ef85a626e453b90a9ce81c103c3910851e057d79ed84c2e38",
+      "md5" : "b050c93a9bfbcd28546cec7511a82e9a",
+      "id" : "org.jboss.logging:jboss-logging:3.4.2.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d7383048ee38e7bc551fb9e86cd31123c7aae603",
+      "sha256" : "d44ad4f752b6dad9159304b3a9ff0d5ac7dbab3b566eb9cc6356b8227d62d6b4",
+      "md5" : "db33fac369de1652a327f8f206bde961",
+      "id" : "org.springframework.boot:spring-boot-test:2.4.4",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "59eb84ee0d616332ff44aba065f3888cf002cd2d",
+      "sha256" : "85fb03fc054cdf4efca8efd9b6712bbb418e1ab98241c4539c8585bbc23e1b8a",
+      "md5" : "8b165cf58df5f8c2a222f637c0a07c97",
+      "id" : "jakarta.annotation:jakarta.annotation-api:1.3.5",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0858a1e1b677cbafd3b100d5154f491a7051401c",
+      "sha256" : "00852350fc1503344723b590f1afe9593ab732fb5b035659b503b49bbea5c9b2",
+      "md5" : "4ed32780449ec72246a29c424ddf1ca8",
+      "id" : "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.12.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-jackson:2.2.3.Final", "io.quarkus:quarkus-vault-model:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "99f53adba383cb1bf7c3862844488574b559621f",
+      "sha256" : "a187a939103aef5849a7af84bd7e27be2d120c410af291437375ffe061f4f09d",
+      "md5" : "1cbb480310fa1987f9db7a3ed7118af7",
+      "id" : "jakarta.activation:jakarta.activation-api:1.2.2",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "jakarta.xml.bind:jakarta.xml.bind-api:2.3.3", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0da08b8cce7bbf903602a25a3a163ae252435795",
+      "sha256" : "896618ed8ae62702521a78bc7be42b7c491a08e6920a15f89a3ecdec31e9a220",
+      "md5" : "c8a73cdfdf802ab0220c860d590d0f84",
+      "id" : "org.ow2.asm:asm:5.0.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "net.minidev:accessors-smart:1.2", "net.minidev:json-smart:2.3", "com.jayway.jsonpath:json-path:2.4.0", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0533508e3a221f35d87372bb1bd66b6cb4f35d68",
+      "sha256" : "7a6295eea70e67f3844083b98c1b0eed20d38013413b72210a32275a561ded69",
+      "md5" : "d0eaafc393f607033eecc38962b42947",
+      "id" : "io.vertx:vertx-web-client:4.1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2067f203fcf82f13c492e70625c139dc7f8c7f2e",
+      "sha256" : "d6e20d97b515126d705c5bc6d142ffb695fea4053305f7adea41f5b75eb6e191",
+      "md5" : "405996f1a91792d042757de35aec2542",
+      "id" : "io.vertx:vertx-auth-common:4.1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-web-client:4.1.3", "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "82dca66a02351432a1c567ff3ffae6ebb7a41293",
+      "sha256" : "a0469a0789d7643d3e3b7537a8d074fa76f5ae96a0177fde24ff8857bbe4cd70",
+      "md5" : "f836e2ebe3caff382b6510bdc7696d4f",
+      "id" : "org.jboss.logmanager:jboss-logmanager-embedded:1.0.9",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2528292c49bd15f1b328dda25a7a75744d6f0991",
+      "sha256" : "9a08f2cc8a627e0ff51a76afd947f76520a4c8f80cc89066a5894c52300ec1e6",
+      "md5" : "b062c048830ac784798d4cbf0ec5c2df",
+      "id" : "io.netty:netty-handler-proxy:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "1dcf1de382a0bf95a3d8b0849546c88bac1292c9",
+      "sha256" : "a171ee4c734dd2da837e4b16be9df4661afab72a41adaf31eb84dfdaf936ca26",
+      "md5" : "091883993ef5bfa91da01dcc8fc52236",
+      "id" : "com.google.guava:failureaccess:1.0.1",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "458d9042f7aa6fa9a634df902b37f544e15aacac",
+      "sha256" : "cd5257c08a246cf8628817ae71cb822be192ef91f6881ca4a3fcff4f1de1cff3",
+      "md5" : "5260e1257140bed1936991931cff5ed8",
+      "id" : "com.google.errorprone:error_prone_annotations:2.7.1",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12",
+      "sha256" : "8e495b634469d64fb8acfa3495a065cbacc8a0fff55ce1e31007be4c16dc57d3",
+      "md5" : "d98a9a02a99a9acd22d7653cbcc1f31f",
+      "id" : "junit:junit:4.13.2",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "42a25dc3219429f0e5d060061f71acb49bf010a0",
+      "sha256" : "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9",
+      "md5" : "6393363b47ddcbba82321110c3e07519",
+      "id" : "org.hamcrest:hamcrest-core:1.3",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "junit:junit:4.13.2", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "20cbde692c555692ca835fb6ecb4a8c95acbe6e0",
+      "sha256" : "210c4f0a5a8f387457d58afa3982b9abdd28f0a891e6289b329a6d8cf2210299",
+      "md5" : "69ab3deaef95f1a6522e7e828694ab14",
+      "id" : "jakarta.interceptor:jakarta.interceptor-api:1.2.5",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "712d2c460526c00d8afb525fbde70e91ce4c083f",
+      "sha256" : "a711c900a4f97f21c37c4184c2788d0b51c84f22a5df32a1606054d80de12642",
+      "md5" : "d934310e05e5bb00973b9e09af9f21a4",
+      "id" : "io.quarkus:quarkus-development-mode-spi:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "541b3e6462b5cc6e8cb59af25ca1743db2436cab",
+      "sha256" : "d080d6083aeba901023c60118ad212034c5861e119106438b68ca71ba5cb2123",
+      "md5" : "f74195e3ce1d4ead8509ef36886af2be",
+      "id" : "org.springframework:spring-messaging:5.3.13",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-context:3.1.6", "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "93164437046e06b4876e069b8e7a321a02f10a2d",
+      "sha256" : "3655ffdcdc058816632666a8bcbcf4bfd09751c6a77dedf70619f37294abb01f",
+      "md5" : "2e07624f1dc24ee8f6cdd69b0aa99ba9",
+      "id" : "jakarta.inject:jakarta.inject-api:1.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a43a7ba97427000bc61a1f41d118fba9582f6ce0",
+      "sha256" : "b5a924bd2af4b612266abb3f3acc5f878a06167c0135004bd915765a9363ff9f",
+      "md5" : "512ee4118ef37c5e040ea4bced669f4c",
+      "id" : "io.quarkus:quarkus-credentials:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e8b502618f960cb1f8cdb7dca92d0878576ad7c6",
+      "sha256" : "f1509bb624140d18a04ae20c65fa7581c2f258ebebc4a305aca6372d9f17d295",
+      "md5" : "5da503a18e054954fa8dcef66ac65100",
+      "id" : "io.netty:netty-transport:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.netty:netty-codec-haproxy:4.1.67.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7c49f0074842d07f4335de2389d624a7437d1407",
+      "sha256" : "7c546be86864718fbaceb79fa84ff1d3a516500fc428f1b21d061c2e0fbc5a4b",
+      "md5" : "d6d74d7c8854ecd573bdc8cde68b80f1",
+      "id" : "org.junit.platform:junit-platform-commons:1.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter-api:5.7.1", "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d87ad19f9d8b9a3f1a143db5a2be34c61751aaa2",
+      "sha256" : "00ffcfb2671e0c8cab33f75939c97e04127fcfd2e0670032c59b6f48d791b772",
+      "md5" : "b9d1f2454c4b7d94c058026d272dfc3c",
+      "id" : "org.springframework:spring-core:5.3.14",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework:spring-test:5.3.14", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "889672a1721d6d85b2834fcd29d3fda92c8c8891",
+      "sha256" : "9c826d27176268777adcf97e1c6e2051c7e33a7aaa2c370c2e8c6077fd9da3f4",
+      "md5" : "309228a89a5a9da89174114b1e681def",
+      "id" : "com.fasterxml.jackson.core:jackson-databind:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "20240291b4f14ffe986e45468b1f1a3c15edc37c",
+      "sha256" : "7a1fc6eabf10dd3085e62e7cb3281084f00ab92a736e0980fc99a1460fa1f5ce",
+      "md5" : "85eed38321bd400fd566d2bcf5094ada",
+      "id" : "net.bytebuddy:byte-buddy:1.10.18",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.mockito:mockito-core:3.6.28", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "25ea2e8b0c338a877313bd4672d3fe056ea78f0d",
+      "sha256" : "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
+      "md5" : "dd83accb899363c32b07d7a1b2e4ce40",
+      "id" : "com.google.code.findbugs:jsr305:3.0.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "60273920add2b71acdf59de530e5f5632ddf4de1",
+      "sha256" : "22dd0a8e1c5c63726d417154eac0bb2caebbd432e3d4a70ab0d01202fc46034d",
+      "md5" : "8b2edfb090d2de758c96263e8c8a83dd",
+      "id" : "io.netty:netty-resolver-dns:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "15be89db6609bd6fda3dc309bacf0318a312c03f",
+      "sha256" : "81f9724d8843e8b08f8f6c0609e7a2b030d00c34861c4ac7e2099a7235047d6f",
+      "md5" : "9b8bb9a5e1f2af431ad919252c643cbc",
+      "id" : "com.fasterxml.jackson.core:jackson-annotations:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.fasterxml.jackson.core:jackson-databind:2.13.0", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c4179d48720a1e87202115fbed6089bdc4195405",
+      "sha256" : "0b02a194dd04ee2e192dc9da9579e10955dd6e8ac707adfc91d92f119b0e67ab",
+      "md5" : "cc45726045cc9a0728f803f9db4c90c4",
+      "id" : "jakarta.transaction:jakarta.transaction-api:1.3.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus.arc:arc:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "9929f9be699ad4171c77fe3a5ed1aae3f4a5fdf7",
+      "sha256" : "3537d0345e68d1ee9aa7403f8c1505a72747c1bd9072a4998e604954ec1a2ec0",
+      "md5" : "d4a80fbb2d839829f12ff40b467a9dc4",
+      "id" : "io.smallrye.common:smallrye-common-function:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.common:smallrye-common-expression:1.6.0", "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "697afeae3e7062a861990bf0dcd0c86e25aca829",
+      "sha256" : "4abf2e577a7caff5748db92724edf03b3f5896a08a9d705902fd92aba1186345",
+      "md5" : "7f258d62d07b2c2f4affc86d0f25de25",
+      "id" : "io.quarkus:quarkus-smallrye-context-propagation:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "292e818822a4fca4e9f3ad711cdd46362f69590a",
+      "sha256" : "6debf704ea1dfea07fbbf8003f541ef6bf55294d8ac61ad4bd55a3982e7647e4",
+      "md5" : "0848eeffadb13dced77f047281872a90",
+      "id" : "io.netty:netty-codec:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-netty:2.2.3.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f7b10eed85c79cbf928fffc0ddd404362f73a87c",
+      "sha256" : "8f6ee572ab1f395f50964c97dfc0fd74f041311cbca0efed4f29526937b7e83e",
+      "md5" : "5547d41f325379b5ada954e8d9e5aad6",
+      "id" : "io.quarkus:quarkus-ide-launcher:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d0848e6d35934a2bb56c83caa485bf70724c77e9",
+      "sha256" : "13b803502b5cfcf4d35b78f041c1cf9bab2efea8063d97e09b88fafe03a55439",
+      "md5" : "08cddd2a0ae2a754f156211f8b3f5ae8",
+      "id" : "io.quarkus:quarkus-netty:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ad16f503916da658bd7b805816ae3b296f3eea4c",
+      "sha256" : "8f6bb5d54f0de3453215745f2844b1f0dc00b24abcb41c97059562743a83a9b2",
+      "md5" : "800c2da305df1e37aa0d46d50901f2b4",
+      "id" : "org.mockito:mockito-core:3.6.28",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "23149890c3b6047604a682aa3d47151d440e1bfa",
+      "sha256" : "3e9b81b927623e9b4663b00f44039eae45563b9c0695ebd861c18922be361c5b",
+      "md5" : "af55bab053a7214f00daac13def5b840",
+      "id" : "org.mockito:mockito-junit-jupiter:3.6.28",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5807f7ab098711f28d7d92c5986c6c5cfd82e996",
+      "sha256" : "1e694368fca476f0a61ea600092652fc6adb83b4915aa0f7dfcc42909c20fbfa",
+      "md5" : "8c54f4b7f28b9219460943cf7d5f8cba",
+      "id" : "org.springframework.boot:spring-boot-starter:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "1070e69ef571b326d91819b57bd06fd7efc60819",
+      "sha256" : "c5b5f85433a9e281fd1ee82d5b8e142e5c494670b29970e627f13e189ff1dc2e",
+      "md5" : "07f5a5757c4782c30f7ee9798ac742f0",
+      "id" : "net.bytebuddy:byte-buddy-agent:1.10.18",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.mockito:mockito-core:3.6.28", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ffcf745ed5ba32930771378316fd08e97986bec2",
+      "sha256" : "b522a60d1f37b8f8b3b6ab58617df850b55fee6d82011b879a62574e068946aa",
+      "md5" : "dd81ad7cd0aa5b6f0225d6a0341edd9a",
+      "id" : "org.springframework:spring-jcl:5.3.14",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework:spring-core:5.3.14", "org.springframework:spring-test:5.3.14", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d600b29d51306b30b29e7de64f6fedf61beb1808",
+      "sha256" : "9884f791f815d0fed8c51771af71164afd48f96e621f26009f9ebe791c053f1b",
+      "md5" : "8cf2730c4d707939cbe16a1b7e846aa3",
+      "id" : "org.wildfly.common:wildfly-common:1.5.4.Final-format-001",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e032c353ceaaf367b217a63a16ac3b012b7c19fd",
+      "sha256" : "54448c234372663b60b97c0e0dda3b03c83aa3d789b8bfdbe09fce5b09832c9d",
+      "md5" : "04b8c08f9c5610f0b9a7dca9380c0de5",
+      "id" : "io.smallrye:smallrye-context-propagation-storage:1.2.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye:smallrye-context-propagation:1.2.0", "io.quarkus:quarkus-smallrye-context-propagation:2.2.3.Final", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "04baaf749314600f9500779bd7c94ae6aa204724",
+      "sha256" : "c0ef37245f521774f9e540bc258981c5931e4c462b246fd452c52f861ebad47b",
+      "md5" : "92b3f24e8b27e93d081d57b94f5255d3",
+      "id" : "org.springframework.cloud:spring-cloud-function-context:3.1.6",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8a432c1d6825781e21a02db2e2c33c5fde2833b9",
+      "sha256" : "d3999291855de495c94c743761b8ab5176cfeabe281a5ab0d8e8d45326fd703e",
+      "md5" : "e67627f67e03301092dc7de0a2d7cef8",
+      "id" : "com.google.code.gson:gson:2.8.9",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "1e5f3c5fdbada2fb4fe574f059813c98c19c1980",
+      "sha256" : "7ae7e84d3eec19f2435d0db9b0bad4cdd0fc82b96e783848fd54318d21528e33",
+      "md5" : "c5400e1fdfd2c4d3d6c57f3e7edfae5e",
+      "id" : "io.smallrye.reactive:mutiny:1.0.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "12f41ad4ec9bda7bb38beebb37a29910500b2fc4",
+      "sha256" : "6a281fbe20df98b885821c50e98b88aa78bf482a495ae44bfb37e64784b3e27c",
+      "md5" : "9ffa3efe16287f9addfe00e55a2a5e86",
+      "id" : "io.smallrye.common:smallrye-common-annotation:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:mutiny:1.0.0", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "62640a6524e1c08d6e8ac06556892b5e1362392f",
+      "sha256" : "5bb57583112598276f919ba4e385c138687f1dbea0f39007a1511cd2caa8722f",
+      "md5" : "a7d68aa85f6615e79e4c1067d8c70fcd",
+      "id" : "io.netty:netty-handler:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-netty:2.2.3.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a4a80ea9b0cca47781edcf9f2d4f1f4f7ce9436e",
+      "sha256" : "1b97c02c9d11a0ca4ed85c32e7c4f4accbd29fa6c3691c931e30e32fe28a6f59",
+      "md5" : "5ca597201babaae2601890d21af98e9e",
+      "id" : "org.junit.jupiter:junit-jupiter:5.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0770429bdf3a3823604817bb66f63b5ee8cf1050",
+      "sha256" : "7f74b2810f9194d3a43405e60dde976a3def62a72aece7ae23d7c5f83e03056c",
+      "md5" : "4cca0f136fed80c3a8002ec77360e6fc",
+      "id" : "org.springframework:spring-test:5.3.14",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d5692f0526415fcc6de94bb5bfbd3afd9dd3b3e5",
+      "sha256" : "ff10785ac2a357ec5de9c293cb982a2cbb605c0309ea4cc1cb9b9bc6dbe7f3cb",
+      "md5" : "ab1ae0e2f2f63601597a5a96fca8a54f",
+      "id" : "org.checkerframework:checker-qual:3.12.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f049146a55991e89c0f04b9624f1f69e1763d80f",
+      "sha256" : "1f6bb90bc78fa69506841c24c33f29790650e092dab96a35e56441f045ae216d",
+      "md5" : "953a41d016a5bc9d9e8ace3d90d499c9",
+      "id" : "org.springframework:spring-aop:5.3.14",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework:spring-context:5.3.14", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2499705b47ff071d6157461662300710e9ffb306",
+      "sha256" : "aa4a917b5a862492a8a150ff924d80e04ac85511127639f4be3ba8ce3f21aa85",
+      "md5" : "10f6ec924d05a698e0819b3bc06628cc",
+      "id" : "org.springframework.boot:spring-boot-test-autoconfigure:2.4.4",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e282137917c67332fa9a414df89f89a93487aede",
+      "sha256" : "a7813ff5beb797316809875e9f558fcda44120f1b0723cfcb78dabcbee487362",
+      "md5" : "2df2d8e733b913fd2c28a93b345c167f",
+      "id" : "io.netty:netty-codec-http:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-netty:2.2.3.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "539df70269cc254a58cccc5d8e43286b4a73bf30",
+      "sha256" : "d1a7a7ef14b3db5c0fc3e0a63a81b374b510afe85add9f7984b97911f4c70605",
+      "md5" : "979ec16f27b6b541278e0ecd10efd771",
+      "id" : "org.mockito:mockito-all:1.10.19",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fa26d351fe62a6a17f5cda1287c1c6110dec413f",
+      "sha256" : "dfb7bae2f404cfe0b72b4d23944698cb716b7665171812a0a4d0f5926c0fac79",
+      "md5" : "10612241a9cc269501a7a2b8a984b949",
+      "id" : "com.vaadin.external.google:android-json:0.0.20131108.vaadin1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.skyscreamer:jsonassert:1.5.0", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d0cf6b02eb1279e0615114ea236515128720c6f7",
+      "sha256" : "1895b681f8f9cd8bc3bd430505a2e25d9a58826c17aa87a3aa62f3c4c0bfde08",
+      "md5" : "8184af21d016d1aea66dd2163cfcebba",
+      "id" : "io.smallrye:smallrye-context-propagation:1.2.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-smallrye-context-propagation:2.2.3.Final", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f508771e470a7e06998569a270b6b83e983c99b2",
+      "sha256" : "d6e3b2b8d039337e403e3eefde39501ea9f316b7c1066d9646f1c3ee71c50581",
+      "md5" : "3bc1f6babff06d2ac85bc22dd40da9a7",
+      "id" : "io.quarkus.arc:arc:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "26983fa6979341cdf68127ee49735fa52d879589",
+      "sha256" : "88f97351f18b297ca58daa5f663a8dd053d1e7350ceec1add32cf2af058cc158",
+      "md5" : "4540f732e42d66c9173b0e39816b05d6",
+      "id" : "io.smallrye.common:smallrye-common-io:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-bootstrap-runner:2.2.3.Final", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "3c52a831bfe8118a27ed393234f1d1d3baa50a7c",
+      "sha256" : "47bf067a03e2f4d57e37ff8acacfa57caefbf89d77167dc6f5c36896aaf8b1c3",
+      "md5" : "476df38dce227910570d7d1104f49089",
+      "id" : "jakarta.ejb:jakarta.ejb-api:3.2.6",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "jakarta.interceptor:jakarta.interceptor-api:1.2.5", "jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8db57237778a89834810868c950acaaeeb938ecc",
+      "sha256" : "9194f8ee1927826d34b52ad92196f8a8896095244c05914f5d653e192b92ab66",
+      "md5" : "b8c1b09145e19dfa835c72ac7bfa8e29",
+      "id" : "io.smallrye.reactive:smallrye-mutiny-vertx-runtime:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-core:2.13.0", "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi2:3.7-SNAPSHOT" ] ]
+    } ]
+  }, {
+    "properties" : {
+      "maven.compiler.target" : "1.8",
+      "maven.compiler.source" : "1.8",
+      "project.build.sourceEncoding" : "UTF-8"
+    },
+    "type" : "maven",
+    "id" : "org.jfrog.test:multi1:3.7-SNAPSHOT",
+    "repository" : "payment-maven-dev-virtual",
+    "artifacts" : [ {
+      "type" : "test-jar",
+      "sha1" : "bba0c220654c99c42cb52b1c58dc423595fcdc66",
+      "sha256" : "6234897d6725071e12a17498417794600c75ef5cd639ec592b1e64c84eaacb5d",
+      "md5" : "99258c219c41877cc12e52a8ecd969b2",
+      "name" : "multi1-3.7-SNAPSHOT-tests.jar",
+      "path" : "org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-SNAPSHOT-tests.jar"
+    }, {
+      "type" : "java-source-jar",
+      "sha1" : "590178e29b2504a1a61e4df34a45327210ee9913",
+      "sha256" : "6e240edf61d9eea564b714210a59143e1a7091326c8068ee00e990d8530885dc",
+      "md5" : "f23e3b1106db637874a5963a95e2849e",
+      "name" : "multi1-3.7-SNAPSHOT-sources.jar",
+      "path" : "org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-SNAPSHOT-sources.jar"
+    }, {
+      "type" : "jar",
+      "sha1" : "1597177241d1f3b3bb1a82c65f0848fe7debf14e",
+      "sha256" : "54874087a0e734141dc0068950d21e270ff2368318868f3704b384a14379b0c4",
+      "md5" : "7749342f822309d8c8cadf508436aa8e",
+      "name" : "multi1-3.7-SNAPSHOT.jar",
+      "path" : "org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-SNAPSHOT.jar"
+    }, {
+      "type" : "pom",
+      "sha1" : "aaf164425269addfefb7d96a1c4e5972b5b85655",
+      "sha256" : "f9c5821b94448a2b2479885c9b2e84b646f85a597e54c927bc345a4d096215f0",
+      "md5" : "3bf2bd62094255d8bc417e7a1f9d5fa9",
+      "name" : "multi1-3.7-SNAPSHOT.pom",
+      "path" : "org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-SNAPSHOT.pom"
+    } ],
+    "dependencies" : [ {
+      "type" : "jar",
+      "sha1" : "7fcfa59c5533abb41f86b1408960737eeaf1f49f",
+      "sha256" : "56616c9350b3624f76cffef6b24ce7bb222915bfd5688f96d3cf4cef34f077cb",
+      "md5" : "5889138d49d65cd1be3a228b73abc485",
+      "id" : "org.junit.jupiter:junit-jupiter-engine:5.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "bf35adef93978c3e8458e4e12a3c220641e8b461",
+      "sha256" : "5f94c817e3322badf5ce3985fa194da0966cace677d88a5259db28f18f75826f",
+      "md5" : "fe84062fafc1075091d6a5b09190c57e",
+      "id" : "org.springframework.boot:spring-boot-starter-test:2.4.4",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "119ea2b2bc205b138974d351777b20f02b92704b",
+      "sha256" : "d5be94d65e87bd219fb3193ad1517baa55a3b88fc91d21cf735826ab5af087b9",
+      "md5" : "bb811ca86cba6506cca5d415cd5559a7",
+      "id" : "com.google.guava:guava:31.0.1-jre",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3",
+      "sha256" : "a310bc79c3f4744e2b2e993702fcebaf3696fec0063643ffdc6b49a8fb03ef39",
+      "md5" : "9139a7742b3a752179d233f551b145ae",
+      "id" : "org.skyscreamer:jsonassert:1.5.0",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ab5daef2f881c42c8e280cbe918ec4d7fdfd7efe",
+      "sha256" : "40ca806a724848616d88461ea565bc597d92b8a90ba426ab92e4c471552dd097",
+      "md5" : "5e6a70a6deed03bbbae6322af632b34c",
+      "id" : "com.sun.mail:javax.mail:1.5.6",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.apache.commons:commons-email:1.5", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e9a005b27f06531f820687a682726a5d2fe565b9",
+      "sha256" : "61825d9cb449f2fe1b9b7dd53bbb9cb0ef1e2a8c39cc64f0ea70c446c7e3f35e",
+      "md5" : "583fae18d7ec55d516a6e884495cce31",
+      "id" : "io.smallrye.config:smallrye-config-core:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a7261dff44e64aea7f621842eac5977fd6d2412d",
+      "sha256" : "ce7b985bc469e2625759a4ebc45533c70581a05a348278c1d6408e9b2e35e314",
+      "md5" : "69395a5e457e37765d4fbbbb5f2d5a18",
+      "id" : "org.junit.jupiter:junit-jupiter-api:5.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "38392ae406009e55efe873baee4633bfa6b766b3",
+      "sha256" : "1f805f990961be541a4465978487e1cd35cdb078e8a8ec17ebf1553fecad2657",
+      "md5" : "5f59aa2d12ca0a79705f830b3b1b16d5",
+      "id" : "org.springframework.boot:spring-boot:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "dc05b8178674edd0c45b7842644b31e22dc1f4f2",
+      "sha256" : "12ff3eae092bf07f6651a93b9292a87fbee7f5b9ad4c9cc01189b1a4f0979973",
+      "md5" : "d50df715121fa262bf005f2dd6ab4393",
+      "id" : "io.projectreactor:reactor-core:3.4.12",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-core:3.1.6", "org.springframework.cloud:spring-cloud-function-context:3.1.6", "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d22cd712db8f1696bc422da54fc5a0f94ee832a6",
+      "sha256" : "96ef349d5fb414f6c327566ba84e693d30e88a30b79a2226087623b43b1c895b",
+      "md5" : "20f7df11b783853b6e12ae5645c7c52f",
+      "id" : "io.smallrye.reactive:mutiny-smallrye-context-propagation:1.0.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8fcc8bc1e54896769d7c021f371c47654754fda6",
+      "sha256" : "7bc73c97fe5179feadcb7805f466cabc07ad405995a0eb981ee7626d31651ad8",
+      "md5" : "3c77fc2cf10c13bd89b07ede49750adc",
+      "id" : "io.smallrye:smallrye-context-propagation-api:1.2.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye:smallrye-context-propagation:1.2.0", "io.quarkus:quarkus-smallrye-context-propagation:2.2.3.Final", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0db03cafeca548adaf564f5e53d8030f8687e1db",
+      "sha256" : "3c3441ed544c29413d3c8165f4863681b1babbc976678aa86a168da1514a0f9f",
+      "md5" : "a861bc1b5a962090b8ec180519a5b4bf",
+      "id" : "io.smallrye.reactive:smallrye-mutiny-vertx-auth-common:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "9721511690817aa48524528dfe63008be3ff157a",
+      "sha256" : "f3db30f23410ab7f971cc6c0807c490def8b96751dafe694250c6e1971fd9e95",
+      "md5" : "33d15c54e7f9eabd584efe48796d3bdc",
+      "id" : "io.vertx:vertx-codegen:4.1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:vertx-mutiny-generator:2.13.0", "io.smallrye.reactive:smallrye-mutiny-vertx-core:2.13.0", "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a849f74bda42b709355011cf7c3e19f0ab672588",
+      "sha256" : "21d8cd126b56e5afb5bdf0fbbc3201806131d77b47507f4f29f2343ae6429145",
+      "md5" : "fe930fc37e0e6c5bcba752c2bedcb2de",
+      "id" : "io.netty:netty-codec-dns:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.netty:netty-resolver-dns:4.1.67.Final", "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "28c11eb91f9b6d8e200631d46e20a7f407f2a046",
+      "sha256" : "58812de60898d976fb81ef3b62da05c6604c18fd4a249f5044282479fc286af2",
+      "md5" : "45c9a837c21f68e8c93e85b121e2fb90",
+      "id" : "org.opentest4j:opentest4j:1.2.0",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter-api:5.7.1", "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ba035118bc8bac37d7eff77700720999acd9986d",
+      "sha256" : "21af30c92267bd6122c0e0b4d20cccb6641a37eaf956c6540ec471d584e64a7b",
+      "md5" : "5fa4ec4ec0c5aa70af8a7d4922df1931",
+      "id" : "com.google.j2objc:j2objc-annotations:1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e2a0c27f396035fab7d932031d6f337244369495",
+      "sha256" : "539d38184abdfa849f54f6505ca9d58f227da325830af2d4b68a818fb82509ad",
+      "md5" : "30fe667e25149b34bd42d741272fd07d",
+      "id" : "io.netty:netty-codec-http2:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-netty:2.2.3.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "74f85536cf7667df521edbbc8d31114553fae895",
+      "sha256" : "a38a76ce24363e1c07467f628e87f7d47a3034b93e83fa3a83ac3a75917a11e3",
+      "md5" : "b691d6e195cb859a70b3b8a8051a1b4d",
+      "id" : "io.quarkus:quarkus-jackson:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault-model:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fec5797a55b786184a537abd39c3fa1449d752d6",
+      "sha256" : "26af661e5c37cfe233cdec402e8a5c0bd112e03d3b6cf12b0d9db7ee7f6fbdd9",
+      "md5" : "b15b1def49daaf7e74fffcce9442ba98",
+      "id" : "org.apache.logging.log4j:log4j-api:2.10.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.apache.logging.log4j:log4j-core:2.10.0", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7c4f3c474fb2c041d8028740440937705ebb473a",
+      "sha256" : "fb53f8539e7fcb8f093a56e138112056ec1dc809ebb020b59d8a36a5ebac37e0",
+      "md5" : "64f7a68f931aed8e5ad8243470440f0b",
+      "id" : "ch.qos.logback:logback-classic:1.2.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-logging:2.4.4", "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "934c04d3cfef185a8008e7bf34331b79730a9d43",
+      "sha256" : "e04ba5195bcd555dc95650f7cc614d151e4bcd52d29a10b8aa2197f3ab89ab9b",
+      "md5" : "2ab1973eefffaa2aeec47d50b9e40b9d",
+      "id" : "javax.annotation:javax.annotation-api:1.3.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5d117d99750c2f4b53a5b49aaa4fce182d7b128c",
+      "sha256" : "6c4642353e0390254c744b787b0a567d0a68f8ecfb84b50e4cf0666564a1e4a1",
+      "md5" : "7488167caa7992717567052ce88c6378",
+      "id" : "org.eclipse.microprofile.config:microprofile-config-api:2.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "6f81b3c053433a8a40a378d2b4f056c5c31e50ff",
+      "sha256" : "8effdd7f8a4ba5558b568184dee08008b2443c86c673ef81de5861fbc7ef0613",
+      "md5" : "99c60487a3d01dda353e34894f6b0720",
+      "id" : "org.junit.jupiter:junit-jupiter-params:5.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ee3db82d956ee22c4f1f2df9c611e048e79a4a43",
+      "sha256" : "f1524fc9d7ed3afc87d365ab0d280ef260c8dd1836435689e8300fd5a51ed178",
+      "md5" : "65ea45ee652a89f43a9a06bd8f0e5139",
+      "id" : "org.jboss.logging:jboss-logging-annotations:2.2.1.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "6793c8a926b4bee18d22ff7d3ad7daaafa16dd68",
+      "sha256" : "01585c04595e93570407151d6dc1af0ddc5ce13b21963370ea5cd3d1ce8e5524",
+      "md5" : "7e85d0435efb251ef5b8cb938ce02c68",
+      "id" : "io.smallrye.reactive:smallrye-mutiny-vertx-web-common:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e532a163d2245a2b25f0250fa8c90eb713e14804",
+      "sha256" : "e8b4059c71f91421ab043704e6d42fb9430da7c08351832a8de6e700d5b3f481",
+      "md5" : "4c0deb306476f0cdfb833b33a2dfccfc",
+      "id" : "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "3aa15be194887fbda3912ecbb4ab6ec8dfdebdb0",
+      "sha256" : "19439f135c90d6ab8f59a24e65bcddad41b9f0af0895115b08316a9ca204e5b0",
+      "md5" : "099c14a54c16f2ab2696203e7b686637",
+      "id" : "org.springframework:spring-jcl:5.3.13",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework:spring-core:5.3.13", "org.springframework:spring-aop:5.3.13", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "48e3b9cfc10752fba3521d6511f4165bea951801",
+      "sha256" : "c04539f472e9a6dd0c7685ea82d677282269ab8e7baca2e14500e381e0c6cec5",
+      "md5" : "61286918ca0192e9f87d1358aef718dd",
+      "id" : "jakarta.xml.bind:jakarta.xml.bind-api:2.3.3",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a86a19033588a07e159ff95818845b1ec86b2281",
+      "sha256" : "60f3c1fba9125566428e3fe67f53f3084ffabcdae24c8a0dc9a225bad4ce77ca",
+      "md5" : "cf29efccb9349638a5357c4544767b27",
+      "id" : "io.netty:netty-common:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5d9f3d441f99d721b957e3497f0a6465c764fad4",
+      "sha256" : "dc64fa3907bd299f29ad6116169e583333d04404b23a0f81ed679afa8e2a2ee8",
+      "md5" : "52526c022078255b8f723103c9d8636d",
+      "id" : "com.fasterxml.jackson.core:jackson-databind:2.11.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-context:3.1.6", "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d58bebff8cbf70ff52b59208586095f467656c30",
+      "sha256" : "bbcbfdaa72572255c4f85207a9bfdb24358dc993e41252331bd4d0913e4988b9",
+      "md5" : "f2c78cb93d70dc5dea0c50f36ace09c1",
+      "id" : "org.slf4j:jul-to-slf4j:1.7.30",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-logging:2.4.4", "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "1bc3c05b42265626de8f4c6fe6b854db41a61de9",
+      "sha256" : "2f6532810afa52410919e7e0ea1dab40d029ceee452d5e2bb9ccb91cd57b22fa",
+      "md5" : "1e10e22919cdd9cf7b1b82a6f892c57c",
+      "id" : "io.quarkus:quarkus-vault:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ce6042492f042131f602bdc83fcb412b142bdac5",
+      "sha256" : "25efd823c10f3afbe1b65efe97370def475d202dd91477f66eb5685e746e2819",
+      "md5" : "731eee1b78fa01375de10fd95b84455d",
+      "id" : "org.springframework:spring-context:5.3.14",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fbadfc6fda98ed91ac3807a81614b7639a54ac76",
+      "sha256" : "7d4b176a6fdadf83a5cd3cdc0b96ed75377129b31a3499aee4dd0f6f43e567d6",
+      "md5" : "28514368aa5a4ee27037ca350fb8aec5",
+      "id" : "io.smallrye.common:smallrye-common-expression:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "51ae921a2ed1e06ca8876f12f32f265e83c0b2b8",
+      "sha256" : "8be6935cd8f9673ac684a589aaa1caecd57dee7c37ed1443d17924325799003d",
+      "md5" : "b5cf9290dc96e215e77f274794d5238e",
+      "id" : "com.fasterxml.jackson.core:jackson-core:2.13.1",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c005a2ed3ec1a4371e49d148e78e3d780bd5bcaf",
+      "sha256" : "2e11536d4667402d30befdbb050bba992a12eb9d95303d546038a37d848a92a6",
+      "md5" : "0b43884599443efa10410c50376f271b",
+      "id" : "org.springframework.cloud:spring-cloud-function-core:3.1.6",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-context:3.1.6", "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4d014eac96329c70175116b185749765cee0aad5",
+      "sha256" : "03cb08647d16dda7e85b0c487881cfac20f49ec398e1411a2a747c5fdb217672",
+      "md5" : "bfcbf0029613dc87303aa34dcfd5feb3",
+      "id" : "org.xmlunit:xmlunit-core:2.7.0",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d1d68e6663accbacacada155d99c550406821d06",
+      "sha256" : "d08223205680f1d85eb5801a845bba561679ba0b8e1ba6be7032e58ead620684",
+      "md5" : "74c8e7162543b7bd82afd857b938f75b",
+      "id" : "io.smallrye.reactive:vertx-mutiny-generator:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-core:2.13.0", "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "de955f92b5aec9d254e04995b83819a9d2c3b853",
+      "sha256" : "d57e5eec16e195c6629711a18b7bd0923f44b501c73c80dc02fdd4fd165f7a89",
+      "md5" : "4094c7d9d8b219bcb889adcfc7c41773",
+      "id" : "io.quarkus:quarkus-core:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e6cb541461c2834bdea3eb920f1884d1eb508b50",
+      "sha256" : "2881c79c9d6ef01c58e62beea13e9d1ac8b8baa16f2fc198ad6e6776defdcdd3",
+      "md5" : "8ae38e87cd4f86059c0294a8fe3e0b18",
+      "id" : "javax.activation:activation:1.1",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.sun.mail:javax.mail:1.5.6", "org.apache.commons:commons-email:1.5", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c90b597163cd28ab6d9687edd53db601b6ea75a1",
+      "sha256" : "22b58febab566eddd5d4863f09dad4d5cc57677b6d4be745e3c6ce547124a66d",
+      "md5" : "dc99011f047e63dcc741b5ab68d116db",
+      "id" : "org.apache.logging.log4j:log4j-core:2.10.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c461293daf33fbb5e7e533a8b3408b840927f418",
+      "sha256" : "4fc7baa153844a0728bab56a6114c9f3a7e02f3aa419ce141667ce8e29b624e3",
+      "md5" : "896fd0732a5c301b78c00e99168b2313",
+      "id" : "io.vertx:vertx-web-common:4.1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-web-client:4.1.3", "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "6237b28c1bad51b175e5b91222292924322fda54",
+      "sha256" : "6d17db0d2662edf413020165f5cd955eecdd0f506973b57144055f69873b0f2d",
+      "md5" : "fd7a72aa27d283bebb9ace6b7a84525d",
+      "id" : "org.springframework.boot:spring-boot-autoconfigure:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "864344400c3d4d92dfeb0a305dc87d953677c03c",
+      "sha256" : "5946d837fe6f960c02a53eda7a6926ecc3c758bbdd69aa453ee429f858217f22",
+      "md5" : "841fc80c6edff60d947a3872a2db4d45",
+      "id" : "ch.qos.logback:logback-core:1.2.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "ch.qos.logback:logback-classic:1.2.3", "org.springframework.boot:spring-boot-starter-logging:2.4.4", "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "19b868c383251f041e0d5fad4f7bfed8cb78847e",
+      "sha256" : "339b9d1a6a6fd02a2bacf1f9f64a5525cdf914598301103db15c4d35cd4168c8",
+      "md5" : "8fbcfb389c6db1e1eac19dfbac0a3e85",
+      "id" : "io.smallrye.config:smallrye-config-common:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "327aa3107e27795587c662baacc87c91f6373a2d",
+      "sha256" : "abcede52cbfb0bbb8e4f50d9614d794728a5547fee6d2dad25c02cda0f13264a",
+      "md5" : "190288a4d4e139ba08f5b7d611b74e11",
+      "id" : "io.netty:netty-codec-haproxy:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fc9dff4bb36d627bdc553de77e1f17efd790876c",
+      "sha256" : "a9aae9ff8ae3e17a2a18f79175e82b16267c246fbbd3ca9dfbbb290b08dcfdd4",
+      "md5" : "944805817b648e558ed6be6fc7f054f3",
+      "id" : "org.apiguardian:apiguardian-api:1.1.0",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter-api:5.7.1", "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "bb9041d5f85f9a6270f5378d0becd243de8cfeac",
+      "sha256" : "7c47abc3085d14c38b128846164df77929fe5119f368c8b14bda401bff537f9b",
+      "md5" : "ea2c79d85317dce3e96b7e65d4f4ee2d",
+      "id" : "io.netty:netty-resolver:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a4fe0487451dc262daaa024224fa207d088b8687",
+      "sha256" : "2e2eb2d9cf8ef043d8a9bef58a2e33cb1f149a477cf24b610660bc5b727ac12a",
+      "md5" : "fd8106bc93011dccbb4f669d91a7f371",
+      "id" : "io.netty:netty-codec-socks:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.netty:netty-handler-proxy:4.1.67.Final", "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d276a968c57f5d60a421dedd1f8b6ca2fae09e86",
+      "sha256" : "37df5a9cd6dbc1f754ba2b46f96b8874a83660e1796bf38c738f022dcf86c23f",
+      "md5" : "c039039577212197d235e0d30d991c31",
+      "id" : "org.junit.platform:junit-platform-engine:1.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter-engine:5.7.1", "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "46d5b17817fb0a4867b5ed7d22495d3626eeef89",
+      "sha256" : "a820350254f875f195d2c7779041d145948009b8a748185ece398bf0b7987223",
+      "md5" : "6c493cb96257607a27d5fc11591bf74b",
+      "id" : "io.smallrye.common:smallrye-common-constraint:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4432cf056309ece02eb23417bc70f96b59ac8c24",
+      "sha256" : "bee98dcd35af29cdfbce09f519d7b837aa19ea998e9e388bd87441e956f1d445",
+      "md5" : "dad5c6a4b3409a40aef9e3f53d6c52fd",
+      "id" : "org.springframework.boot:spring-boot-starter-logging:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "359d62567480b07a679dc643f82fc926b100eed5",
+      "sha256" : "7e7cce6740ed705bfdfaac7b442c1375d2986d2f2935936a5bd40c14e18fd736",
+      "md5" : "466ff09da784f9f21b2e6bf3b486a8cd",
+      "id" : "org.yaml:snakeyaml:1.27",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "1820c0968dba3a11a1b30669bb1f01978a91dedc",
+      "sha256" : "5e62846a89f05cd78cd9c1a553f340d002458380c320455dd1f8fc5497a8a1c1",
+      "md5" : "10b47e837f271d0662f28780e60388e8",
+      "id" : "org.hamcrest:hamcrest:2.2",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e8b21439df8e2cc588dce4a257ba82cdd74f7b87",
+      "sha256" : "a3e1165891b60ed4e3d0e5b6132ffb8811466f5e3be6300257122f18acaede31",
+      "md5" : "ae35148d476fe221953c123d65b6c769",
+      "id" : "io.smallrye.config:smallrye-config:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "765a4401ceb2dc8d40553c2075eb80a8fa35c2ae",
+      "sha256" : "60441c74fb64e5a480070f86a604941927aaf684e2b513d780fb7a38fb4c5639",
+      "md5" : "29169b4b1115bc851e5734ef35ecd42a",
+      "id" : "com.jayway.jsonpath:json-path:2.4.0",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "58f497f362cd19c2f8842d75c491d270f0600e7f",
+      "sha256" : "e71bbe0e4cacfce5b7d609021344d883531aa3e19321db17390f849fdb04a509",
+      "md5" : "ff8956b6aa6e32e6f9064597d9c9f1bd",
+      "id" : "jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5f1c0e3f5082c21f6b4964b97fe5b1d5f8c42f53",
+      "sha256" : "1470840f56dee84303b0a81202c4b47f4b54815e9731e44cddb81c38df5e6d4d",
+      "md5" : "5caba5010589a8455cb37317d674f82f",
+      "id" : "org.jboss.slf4j:slf4j-jboss-logmanager:1.1.0.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d1e38fe8e668f228b0761d80a6c80c151ab6044a",
+      "sha256" : "6458253a16d4dcef4749860e61ba2959014e39d5af9d3286bc9b8318d2ba4047",
+      "md5" : "d53cf8c0bba8c67b45e7b181b227b820",
+      "id" : "net.jodah:typetools:0.6.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-context:3.1.6", "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "87c4e9a3302f0fafe4e5587f9c27d22847d8fe00",
+      "sha256" : "d1336fe625a5b030fe99227a721e890a559e43efe0ac05a8bcf7a5e5f8bc6432",
+      "md5" : "812f2c571f7006e0b6788e23aff7e1ec",
+      "id" : "com.fasterxml.jackson.module:jackson-module-parameter-names:2.12.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-jackson:2.2.3.Final", "io.quarkus:quarkus-vault-model:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f744b95bbaaf0d1ea2b063a15a3c5ce275919f39",
+      "sha256" : "0bc2981d170e10716363a39b8fbadea9bb5d77de6b52f217086a4e4a0f9f0d3b",
+      "md5" : "38428cad4ac1cf755135dabd4e2cb864",
+      "id" : "io.smallrye.common:smallrye-common-classloader:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "496b9194df9f632884ea1144201776be348669e6",
+      "sha256" : "a743d6b1020cb58d0a9ffe7ede32ef134734d2315d29b2a0a0c2ce3363fca6e7",
+      "md5" : "f8ffb44da68bbe64783943c0a06f65f4",
+      "id" : "org.jboss.threads:jboss-threads:3.4.2.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a9b4c1ed776ae5f8d89fe661060c60ca7106e4ce",
+      "sha256" : "129c9b2539da51eac6f5c3975f985a96db50215307273d08b26f5a6f89102fcc",
+      "md5" : "e61efeaea609f9ec8a438e5307fbbda6",
+      "id" : "io.quarkus:quarkus-vertx-core:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4b6217b05792fe6e2bd080c054138b2c20ae1b37",
+      "sha256" : "9f7621838eddae098428310067fbdfe584ec71eb42b34397a18480801b75c6ce",
+      "md5" : "939e9a71ba2b13b51cb3097149eb70a5",
+      "id" : "io.netty:netty-buffer:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.netty:netty-codec-haproxy:4.1.67.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e8efc0f2ab4ec6b31bd8474a4a4d834965e4e8e9",
+      "sha256" : "1576e21f3bf9cc3a3092e7cd40e9c9fef70532223af98a9218c1c9c885a71251",
+      "md5" : "e830dad034ed760dea05d1f5bbd16d28",
+      "id" : "org.eclipse.microprofile.context-propagation:microprofile-context-propagation-api:1.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:mutiny-smallrye-context-propagation:1.0.0", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5c93806d9c73a8819b4229e1d1f3906b2d3e1ccb",
+      "sha256" : "c103322a09ab5322ff9b5de28c80f00b257bca5748828a04a13b131d6f475e27",
+      "md5" : "d63a3d5f229de8db968620c6dd1d3f96",
+      "id" : "io.quarkus:quarkus-vault-model:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0045978ade4d8773d489d8f3397037d0fa04d111",
+      "sha256" : "265c0f85f5ac8c38a3dd01f3c288c11ce0d200b0ba214fe5240987cce0322cc4",
+      "md5" : "8fdd09515b4b8498246972a0bd8a8ef4",
+      "id" : "io.smallrye.reactive:smallrye-mutiny-vertx-core:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fd86b6400f463b7e36e24e70f0b2beb8665da182",
+      "sha256" : "e00c9a92adb54d3c3c9c3616af42ef5061e6f7ce0fdb9938a0d668d5610d30a4",
+      "md5" : "d9bed85ddc8b9690ea3eb2521e590a07",
+      "id" : "io.quarkus:quarkus-mutiny:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "45a8fa11d3be3c50f55d270a5d3abf2d5796bfac",
+      "sha256" : "99c0ad053f5c9635049e2079112a4f0d864c7d5c44b352513e594e8964cff9b3",
+      "md5" : "7c0210bdc158c24b824a542ccbfc0949",
+      "id" : "net.bytebuddy:byte-buddy-agent:1.12.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.mockito:mockito-core:4.1.0", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "966f6fd1af4959d6b12bfa880121d4a2b164f857",
+      "sha256" : "9624e9aaf60b1875adde33d8e7997de110b70be09e94e55ad8fc39637ec002c4",
+      "md5" : "bafb53f0385a82d4f9c1145917908736",
+      "id" : "org.apache.logging.log4j:log4j-to-slf4j:2.13.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-logging:2.4.4", "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e8e677c6362eba14ff3c476ba63ccb83132dbd52",
+      "sha256" : "ee8479906abb2c355a46a0a9845cfa1803bcc3c520a34baea4a6cf4e1f0f0cc1",
+      "md5" : "e72657496d31f152aa26d4122e0850d9",
+      "id" : "org.apache.commons:commons-email:1.5",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "007396407491352ce4fa30de92efb158adb76b5b",
+      "sha256" : "903f48c8aa4c3f6426440b8d32de89fa1dc23b1169abde25e4e1d068aa67708b",
+      "md5" : "f2a921d4baaa7308de04eed4d8d72715",
+      "id" : "net.minidev:json-smart:2.3",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "com.jayway.jsonpath:json-path:2.4.0", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "aaa02680dd92a568a4278bb40aa4a6305f632ec0",
+      "sha256" : "721aba451a5b1019986d38c728327173b116d961c637cae15aedcf524baddfd5",
+      "md5" : "648566304bfb8ec4136fa2c7f0ace564",
+      "id" : "org.assertj:assertj-core:3.18.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fb2de09a03a9fdf9107fd918dddaf829b6b29c57",
+      "sha256" : "71678856fc61440dedd5bc92e5b24052af957df98aa8448e335f449f069b04b0",
+      "md5" : "c5c782ecca68c9dff34122d3386dcfcd",
+      "id" : "io.vertx:vertx-core:4.1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2c3f5c079330f3a01726686a078979420f547ae4",
+      "sha256" : "2ab76f64048673675f26ddd1008a32889855d8a126273edae2aeee516785a1ec",
+      "md5" : "d3f315e7d1cde5682c27c77be76287f3",
+      "id" : "com.fasterxml.jackson.core:jackson-annotations:2.11.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.fasterxml.jackson.core:jackson-databind:2.11.4", "org.springframework.cloud:spring-cloud-function-context:3.1.6", "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "b421526c5f297295adef1c886e5246c39d4ac629",
+      "sha256" : "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99",
+      "md5" : "d094c22570d65e132c19cea5d352e381",
+      "id" : "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0b3ace62035ec1d9a717d7cba255484c4b083b82",
+      "sha256" : "e1edfaef58a1a78238984e650d9e10d6cd745b647074d099d067e9219bae744a",
+      "md5" : "375badfeac83015af9a378ea4e10aeba",
+      "id" : "org.springframework.cloud:spring-cloud-function-web:3.1.6",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a6f3d634a1a648e68824d5edcebf14b368f8db1b",
+      "sha256" : "ef900b2fb59aead2847974d5563da79d5b13b5eb8c0dbf203fe5cd9a69e5c4ab",
+      "md5" : "db99d732bab1d4b30f35dee56728f886",
+      "id" : "org.graalvm.sdk:graal-sdk:21.2.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d620839fc595dceb83b276aca911c9780cf2f55e",
+      "sha256" : "79cbd39bed7bbb9de847ee1d2f9de9b52c2ecf1bd9f516a7359ef5a1e2fdeaa8",
+      "md5" : "ad2efd17e4dbb32e717ca29c4cccf42d",
+      "id" : "io.quarkus:quarkus-arc:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f311ab94bb1d4380690a53d737226a6b879dd4f1",
+      "sha256" : "47ae0a91fb6dd32fdaa5d9bda63df043ac8148e00c297ccce8ab9c56b95cf261",
+      "md5" : "528ed6138395d22fb54912b2b889e88e",
+      "id" : "jakarta.el:jakarta.el-api:3.0.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "b1174c05d4ded121a7eaeed3f148709f9585b981",
+      "sha256" : "af5a384d020e43f91f56d083f170d67aaf5aead71fa8fa1ad80a425b13ba13e4",
+      "md5" : "0ab0ba0ba9299d74c36a7c60c26f6b99",
+      "id" : "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault-model:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "b9d07ee38cf1c0787ab072a156bd587e6f8a144e",
+      "sha256" : "19a243b87ed6c30c4cd086afeec76ff5af0cb1e5779d6b9af257e97f830e713a",
+      "md5" : "d0bcf4864d382fcd300e968adfaf2a85",
+      "id" : "io.quarkus:quarkus-bootstrap-runner:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d9fb7a7926ffa635b3dcaa5049fb2bfa25b3e7d0",
+      "sha256" : "1dee0481072d19c929b623e155e14d2f6085dc011529a0a0dbefc84cf571d865",
+      "md5" : "69122b098fff1c6b1bf2cd3b355e7e03",
+      "id" : "org.reactivestreams:reactive-streams:1.0.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:mutiny:1.0.0", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c592b500269bfde36096641b01238a8350f8aa31",
+      "sha256" : "0c7c265d62fc007124dc32b91336e9c4272651d629bc5fa1a4e4e3bc758eb2e4",
+      "md5" : "c28b871d258b4d347559d2eb7ecec4a3",
+      "id" : "net.minidev:accessors-smart:1.2",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "net.minidev:json-smart:2.3", "com.jayway.jsonpath:json-path:2.4.0", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5cd4c568522b7084afac5d2ac6cb945b797b3f16",
+      "sha256" : "f196833d5bca28b12fbb4ae3265c0f0c4dc9fb4c726b3bfc4cabcc129cd21cf7",
+      "md5" : "1d268dba90b89964d97254bae133a431",
+      "id" : "org.springframework:spring-expression:5.3.14",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework:spring-context:5.3.14", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "289d8047f7cc524d60ca0c4cc6fedb8cb003e02d",
+      "sha256" : "2fc52811a5a8bb5684957ba67ab5642d39833be624f2507e2577707e737670b2",
+      "md5" : "444211b4b18cfd7b4b981433e00b8c91",
+      "id" : "org.springframework:spring-beans:5.3.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d7383048ee38e7bc551fb9e86cd31123c7aae603",
+      "sha256" : "d44ad4f752b6dad9159304b3a9ff0d5ac7dbab3b566eb9cc6356b8227d62d6b4",
+      "md5" : "db33fac369de1652a327f8f206bde961",
+      "id" : "org.springframework.boot:spring-boot-test:2.4.4",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e517b8a93dd9962ed5481345e4d262fdd47c4217",
+      "sha256" : "804d824c9144561ef85a626e453b90a9ce81c103c3910851e057d79ed84c2e38",
+      "md5" : "b050c93a9bfbcd28546cec7511a82e9a",
+      "id" : "org.jboss.logging:jboss-logging:3.4.2.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "97678ff6b11525e06188f56f9afd14be28bf85f9",
+      "sha256" : "9062fb0ae3ae7fab0118d77e9c8bc2dae2ce0144a71b6952d7ba4ddc14c69c5f",
+      "md5" : "34f5775644512cc8e118a074ca3fcb51",
+      "id" : "net.bytebuddy:byte-buddy:1.12.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.mockito:mockito-core:4.1.0", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "59eb84ee0d616332ff44aba065f3888cf002cd2d",
+      "sha256" : "85fb03fc054cdf4efca8efd9b6712bbb418e1ab98241c4539c8585bbc23e1b8a",
+      "md5" : "8b165cf58df5f8c2a222f637c0a07c97",
+      "id" : "jakarta.annotation:jakarta.annotation-api:1.3.5",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0858a1e1b677cbafd3b100d5154f491a7051401c",
+      "sha256" : "00852350fc1503344723b590f1afe9593ab732fb5b035659b503b49bbea5c9b2",
+      "md5" : "4ed32780449ec72246a29c424ddf1ca8",
+      "id" : "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.12.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-jackson:2.2.3.Final", "io.quarkus:quarkus-vault-model:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "99f53adba383cb1bf7c3862844488574b559621f",
+      "sha256" : "a187a939103aef5849a7af84bd7e27be2d120c410af291437375ffe061f4f09d",
+      "md5" : "1cbb480310fa1987f9db7a3ed7118af7",
+      "id" : "jakarta.activation:jakarta.activation-api:1.2.2",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "jakarta.xml.bind:jakarta.xml.bind-api:2.3.3", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0da08b8cce7bbf903602a25a3a163ae252435795",
+      "sha256" : "896618ed8ae62702521a78bc7be42b7c491a08e6920a15f89a3ecdec31e9a220",
+      "md5" : "c8a73cdfdf802ab0220c860d590d0f84",
+      "id" : "org.ow2.asm:asm:5.0.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "net.minidev:accessors-smart:1.2", "net.minidev:json-smart:2.3", "com.jayway.jsonpath:json-path:2.4.0", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "0533508e3a221f35d87372bb1bd66b6cb4f35d68",
+      "sha256" : "7a6295eea70e67f3844083b98c1b0eed20d38013413b72210a32275a561ded69",
+      "md5" : "d0eaafc393f607033eecc38962b42947",
+      "id" : "io.vertx:vertx-web-client:4.1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2067f203fcf82f13c492e70625c139dc7f8c7f2e",
+      "sha256" : "d6e20d97b515126d705c5bc6d142ffb695fea4053305f7adea41f5b75eb6e191",
+      "md5" : "405996f1a91792d042757de35aec2542",
+      "id" : "io.vertx:vertx-auth-common:4.1.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-web-client:4.1.3", "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "82dca66a02351432a1c567ff3ffae6ebb7a41293",
+      "sha256" : "a0469a0789d7643d3e3b7537a8d074fa76f5ae96a0177fde24ff8857bbe4cd70",
+      "md5" : "f836e2ebe3caff382b6510bdc7696d4f",
+      "id" : "org.jboss.logmanager:jboss-logmanager-embedded:1.0.9",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2528292c49bd15f1b328dda25a7a75744d6f0991",
+      "sha256" : "9a08f2cc8a627e0ff51a76afd947f76520a4c8f80cc89066a5894c52300ec1e6",
+      "md5" : "b062c048830ac784798d4cbf0ec5c2df",
+      "id" : "io.netty:netty-handler-proxy:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "1dcf1de382a0bf95a3d8b0849546c88bac1292c9",
+      "sha256" : "a171ee4c734dd2da837e4b16be9df4661afab72a41adaf31eb84dfdaf936ca26",
+      "md5" : "091883993ef5bfa91da01dcc8fc52236",
+      "id" : "com.google.guava:failureaccess:1.0.1",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12",
+      "sha256" : "8e495b634469d64fb8acfa3495a065cbacc8a0fff55ce1e31007be4c16dc57d3",
+      "md5" : "d98a9a02a99a9acd22d7653cbcc1f31f",
+      "id" : "junit:junit:4.13.2",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "458d9042f7aa6fa9a634df902b37f544e15aacac",
+      "sha256" : "cd5257c08a246cf8628817ae71cb822be192ef91f6881ca4a3fcff4f1de1cff3",
+      "md5" : "5260e1257140bed1936991931cff5ed8",
+      "id" : "com.google.errorprone:error_prone_annotations:2.7.1",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "42a25dc3219429f0e5d060061f71acb49bf010a0",
+      "sha256" : "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9",
+      "md5" : "6393363b47ddcbba82321110c3e07519",
+      "id" : "org.hamcrest:hamcrest-core:1.3",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "junit:junit:4.13.2", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "20cbde692c555692ca835fb6ecb4a8c95acbe6e0",
+      "sha256" : "210c4f0a5a8f387457d58afa3982b9abdd28f0a891e6289b329a6d8cf2210299",
+      "md5" : "69ab3deaef95f1a6522e7e828694ab14",
+      "id" : "jakarta.interceptor:jakarta.interceptor-api:1.2.5",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "712d2c460526c00d8afb525fbde70e91ce4c083f",
+      "sha256" : "a711c900a4f97f21c37c4184c2788d0b51c84f22a5df32a1606054d80de12642",
+      "md5" : "d934310e05e5bb00973b9e09af9f21a4",
+      "id" : "io.quarkus:quarkus-development-mode-spi:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "541b3e6462b5cc6e8cb59af25ca1743db2436cab",
+      "sha256" : "d080d6083aeba901023c60118ad212034c5861e119106438b68ca71ba5cb2123",
+      "md5" : "f74195e3ce1d4ead8509ef36886af2be",
+      "id" : "org.springframework:spring-messaging:5.3.13",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-context:3.1.6", "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "93164437046e06b4876e069b8e7a321a02f10a2d",
+      "sha256" : "3655ffdcdc058816632666a8bcbcf4bfd09751c6a77dedf70619f37294abb01f",
+      "md5" : "2e07624f1dc24ee8f6cdd69b0aa99ba9",
+      "id" : "jakarta.inject:jakarta.inject-api:1.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a43a7ba97427000bc61a1f41d118fba9582f6ce0",
+      "sha256" : "b5a924bd2af4b612266abb3f3acc5f878a06167c0135004bd915765a9363ff9f",
+      "md5" : "512ee4118ef37c5e040ea4bced669f4c",
+      "id" : "io.quarkus:quarkus-credentials:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7c49f0074842d07f4335de2389d624a7437d1407",
+      "sha256" : "7c546be86864718fbaceb79fa84ff1d3a516500fc428f1b21d061c2e0fbc5a4b",
+      "md5" : "d6d74d7c8854ecd573bdc8cde68b80f1",
+      "id" : "org.junit.platform:junit-platform-commons:1.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.junit.jupiter:junit-jupiter-api:5.7.1", "org.junit.jupiter:junit-jupiter:5.7.1", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e8b502618f960cb1f8cdb7dca92d0878576ad7c6",
+      "sha256" : "f1509bb624140d18a04ae20c65fa7581c2f258ebebc4a305aca6372d9f17d295",
+      "md5" : "5da503a18e054954fa8dcef66ac65100",
+      "id" : "io.netty:netty-transport:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.netty:netty-codec-haproxy:4.1.67.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e0fddf47af3fbbec69a403c058c23505612ca329",
+      "sha256" : "24e41b42137dfb6bde3aace2d48e45d73c4be13d4167d88a789ba41bf9325f79",
+      "md5" : "90a838a495316a878ca9d941fbfe7758",
+      "id" : "org.springframework:spring-aop:5.3.13",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "25ea2e8b0c338a877313bd4672d3fe056ea78f0d",
+      "sha256" : "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
+      "md5" : "dd83accb899363c32b07d7a1b2e4ce40",
+      "id" : "com.google.code.findbugs:jsr305:3.0.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "60273920add2b71acdf59de530e5f5632ddf4de1",
+      "sha256" : "22dd0a8e1c5c63726d417154eac0bb2caebbd432e3d4a70ab0d01202fc46034d",
+      "md5" : "8b2edfb090d2de758c96263e8c8a83dd",
+      "id" : "io.netty:netty-resolver-dns:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.vertx:vertx-core:4.1.3", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "c4179d48720a1e87202115fbed6089bdc4195405",
+      "sha256" : "0b02a194dd04ee2e192dc9da9579e10955dd6e8ac707adfc91d92f119b0e67ab",
+      "md5" : "cc45726045cc9a0728f803f9db4c90c4",
+      "id" : "jakarta.transaction:jakarta.transaction-api:1.3.3",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus.arc:arc:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "9929f9be699ad4171c77fe3a5ed1aae3f4a5fdf7",
+      "sha256" : "3537d0345e68d1ee9aa7403f8c1505a72747c1bd9072a4998e604954ec1a2ec0",
+      "md5" : "d4a80fbb2d839829f12ff40b467a9dc4",
+      "id" : "io.smallrye.common:smallrye-common-function:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.common:smallrye-common-expression:1.6.0", "io.smallrye.config:smallrye-config-core:2.4.4", "io.smallrye.config:smallrye-config:2.4.4", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "ddbff945b7539d67c0b59f11a419bc0811b6b1e6",
+      "sha256" : "9a924658ec795777cce66da7ecbefde57b079408b838992a624db33d52da9359",
+      "md5" : "b901a5195a998920039f59785bf0f8d8",
+      "id" : "org.mockito:mockito-core:4.1.0",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "697afeae3e7062a861990bf0dcd0c86e25aca829",
+      "sha256" : "4abf2e577a7caff5748db92724edf03b3f5896a08a9d705902fd92aba1186345",
+      "md5" : "7f258d62d07b2c2f4affc86d0f25de25",
+      "id" : "io.quarkus:quarkus-smallrye-context-propagation:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "292e818822a4fca4e9f3ad711cdd46362f69590a",
+      "sha256" : "6debf704ea1dfea07fbbf8003f541ef6bf55294d8ac61ad4bd55a3982e7647e4",
+      "md5" : "0848eeffadb13dced77f047281872a90",
+      "id" : "io.netty:netty-codec:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-netty:2.2.3.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "404b15dbbc53cbf44cec01be3246b3c261ccde08",
+      "sha256" : "2e5a0b101f56859c17651b40e02d3a9070f676d7cac0544cb15b3852df903088",
+      "md5" : "132d9049c348baed07325dc9bb4c7a59",
+      "id" : "org.springframework:spring-test:5.3.5",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f7b10eed85c79cbf928fffc0ddd404362f73a87c",
+      "sha256" : "8f6ee572ab1f395f50964c97dfc0fd74f041311cbca0efed4f29526937b7e83e",
+      "md5" : "5547d41f325379b5ada954e8d9e5aad6",
+      "id" : "io.quarkus:quarkus-ide-launcher:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d0848e6d35934a2bb56c83caa485bf70724c77e9",
+      "sha256" : "13b803502b5cfcf4d35b78f041c1cf9bab2efea8063d97e09b88fafe03a55439",
+      "md5" : "08cddd2a0ae2a754f156211f8b3f5ae8",
+      "id" : "io.quarkus:quarkus-netty:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "23149890c3b6047604a682aa3d47151d440e1bfa",
+      "sha256" : "3e9b81b927623e9b4663b00f44039eae45563b9c0695ebd861c18922be361c5b",
+      "md5" : "af55bab053a7214f00daac13def5b840",
+      "id" : "org.mockito:mockito-junit-jupiter:3.6.28",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5807f7ab098711f28d7d92c5986c6c5cfd82e996",
+      "sha256" : "1e694368fca476f0a61ea600092652fc6adb83b4915aa0f7dfcc42909c20fbfa",
+      "md5" : "8c54f4b7f28b9219460943cf7d5f8cba",
+      "id" : "org.springframework.boot:spring-boot-starter:2.4.4",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d600b29d51306b30b29e7de64f6fedf61beb1808",
+      "sha256" : "9884f791f815d0fed8c51771af71164afd48f96e621f26009f9ebe791c053f1b",
+      "md5" : "8cf2730c4d707939cbe16a1b7e846aa3",
+      "id" : "org.wildfly.common:wildfly-common:1.5.4.Final-format-001",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e032c353ceaaf367b217a63a16ac3b012b7c19fd",
+      "sha256" : "54448c234372663b60b97c0e0dda3b03c83aa3d789b8bfdbe09fce5b09832c9d",
+      "md5" : "04b8c08f9c5610f0b9a7dca9380c0de5",
+      "id" : "io.smallrye:smallrye-context-propagation-storage:1.2.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye:smallrye-context-propagation:1.2.0", "io.quarkus:quarkus-smallrye-context-propagation:2.2.3.Final", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "04baaf749314600f9500779bd7c94ae6aa204724",
+      "sha256" : "c0ef37245f521774f9e540bc258981c5931e4c462b246fd452c52f861ebad47b",
+      "md5" : "92b3f24e8b27e93d081d57b94f5255d3",
+      "id" : "org.springframework.cloud:spring-cloud-function-context:3.1.6",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework.cloud:spring-cloud-function-web:3.1.6", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8a432c1d6825781e21a02db2e2c33c5fde2833b9",
+      "sha256" : "d3999291855de495c94c743761b8ab5176cfeabe281a5ab0d8e8d45326fd703e",
+      "md5" : "e67627f67e03301092dc7de0a2d7cef8",
+      "id" : "com.google.code.gson:gson:2.8.9",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "1e5f3c5fdbada2fb4fe574f059813c98c19c1980",
+      "sha256" : "7ae7e84d3eec19f2435d0db9b0bad4cdd0fc82b96e783848fd54318d21528e33",
+      "md5" : "c5400e1fdfd2c4d3d6c57f3e7edfae5e",
+      "id" : "io.smallrye.reactive:mutiny:1.0.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "12f41ad4ec9bda7bb38beebb37a29910500b2fc4",
+      "sha256" : "6a281fbe20df98b885821c50e98b88aa78bf482a495ae44bfb37e64784b3e27c",
+      "md5" : "9ffa3efe16287f9addfe00e55a2a5e86",
+      "id" : "io.smallrye.common:smallrye-common-annotation:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:mutiny:1.0.0", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "4de9992988c534efd668bfcca0480ebe13e0c0eb",
+      "sha256" : "52d85e04b3918722af11d12855b4a8257df96a0e76c8f4e3852e6faa851f357b",
+      "md5" : "c155c4135ef7ba134659bf1af31c5156",
+      "id" : "org.codehaus.plexus:plexus-utils:3.4.1",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "a4a80ea9b0cca47781edcf9f2d4f1f4f7ce9436e",
+      "sha256" : "1b97c02c9d11a0ca4ed85c32e7c4f4accbd29fa6c3691c931e30e32fe28a6f59",
+      "md5" : "5ca597201babaae2601890d21af98e9e",
+      "id" : "org.junit.jupiter:junit-jupiter:5.7.1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "62640a6524e1c08d6e8ac06556892b5e1362392f",
+      "sha256" : "5bb57583112598276f919ba4e385c138687f1dbea0f39007a1511cd2caa8722f",
+      "md5" : "a7d68aa85f6615e79e4c1067d8c70fcd",
+      "id" : "io.netty:netty-handler:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-netty:2.2.3.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "506fc1d8e200a9e664d8befb991d407ae551d7fe",
+      "sha256" : "7fdec47085eb01c060d07bd79121eea2a8cf1d8f110ae4ba89e0307795252f4f",
+      "md5" : "dffee03336878ad481c612f82bac224c",
+      "id" : "commons-io:commons-io:20030203.000550",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d2a6c3372dd337e08144f9f49f386b8ec7a8080d",
+      "sha256" : "f917578c93e5542eced89c4462fda3958230707d842ffbfa61110aa3a897dc98",
+      "md5" : "9cbed00d1278f413f182577d942b578d",
+      "id" : "org.springframework:spring-core:5.3.13",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.springframework:spring-aop:5.3.13", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "7fadf57620c8b8abdf7519533e5527367cb51f09",
+      "sha256" : "03d960bd5aef03c653eb000413ada15eb77cdd2b8e4448886edf5692805e35f3",
+      "md5" : "5c1ee20481a06561af295034ea89c4b4",
+      "id" : "org.objenesis:objenesis:3.2",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.mockito:mockito-core:4.1.0", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d5692f0526415fcc6de94bb5bfbd3afd9dd3b3e5",
+      "sha256" : "ff10785ac2a357ec5de9c293cb982a2cbb605c0309ea4cc1cb9b9bc6dbe7f3cb",
+      "md5" : "ab1ae0e2f2f63601597a5a96fca8a54f",
+      "id" : "org.checkerframework:checker-qual:3.12.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.google.guava:guava:31.0.1-jre", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "2499705b47ff071d6157461662300710e9ffb306",
+      "sha256" : "aa4a917b5a862492a8a150ff924d80e04ac85511127639f4be3ba8ce3f21aa85",
+      "md5" : "10f6ec924d05a698e0819b3bc06628cc",
+      "id" : "org.springframework.boot:spring-boot-test-autoconfigure:2.4.4",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "da76ca59f6a57ee3102f8f9bd9cee742973efa8a",
+      "sha256" : "18c4a0095d5c1da6b817592e767bb23d29dd2f560ad74df75ff3961dbde25b79",
+      "md5" : "caafe376afb7086dcbee79f780394ca3",
+      "id" : "org.slf4j:slf4j-api:1.7.25",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "com.jayway.jsonpath:json-path:2.4.0", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "e282137917c67332fa9a414df89f89a93487aede",
+      "sha256" : "a7813ff5beb797316809875e9f558fcda44120f1b0723cfcb78dabcbee487362",
+      "md5" : "2df2d8e733b913fd2c28a93b345c167f",
+      "id" : "io.netty:netty-codec-http:4.1.67.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-netty:2.2.3.Final", "io.quarkus:quarkus-vertx-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "5bf0c26ef77df58c7c28be2d9d52246f2b437a54",
+      "sha256" : "cfbb2169429dbfef99f3c419622b7d6b385909aa7816adfa44501e2767a72e89",
+      "md5" : "dd575c153ec55c650d2a66aefc5ba9d3",
+      "id" : "javax.servlet.jsp:jsp-api:2.2",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "fa26d351fe62a6a17f5cda1287c1c6110dec413f",
+      "sha256" : "dfb7bae2f404cfe0b72b4d23944698cb716b7665171812a0a4d0f5926c0fac79",
+      "md5" : "10612241a9cc269501a7a2b8a984b949",
+      "id" : "com.vaadin.external.google:android-json:0.0.20131108.vaadin1",
+      "scopes" : [ "test" ],
+      "requestedBy" : [ [ "org.skyscreamer:jsonassert:1.5.0", "org.springframework.boot:spring-boot-starter-test:2.4.4", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "d0cf6b02eb1279e0615114ea236515128720c6f7",
+      "sha256" : "1895b681f8f9cd8bc3bd430505a2e25d9a58826c17aa87a3aa62f3c4c0bfde08",
+      "md5" : "8184af21d016d1aea66dd2163cfcebba",
+      "id" : "io.smallrye:smallrye-context-propagation:1.2.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-smallrye-context-propagation:2.2.3.Final", "io.quarkus:quarkus-mutiny:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "f508771e470a7e06998569a270b6b83e983c99b2",
+      "sha256" : "d6e3b2b8d039337e403e3eefde39501ea9f316b7c1066d9646f1c3ee71c50581",
+      "md5" : "3bc1f6babff06d2ac85bc22dd40da9a7",
+      "id" : "io.quarkus.arc:arc:2.2.3.Final",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "26983fa6979341cdf68127ee49735fa52d879589",
+      "sha256" : "88f97351f18b297ca58daa5f663a8dd053d1e7350ceec1add32cf2af058cc158",
+      "md5" : "4540f732e42d66c9173b0e39816b05d6",
+      "id" : "io.smallrye.common:smallrye-common-io:1.6.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.quarkus:quarkus-bootstrap-runner:2.2.3.Final", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "3c52a831bfe8118a27ed393234f1d1d3baa50a7c",
+      "sha256" : "47bf067a03e2f4d57e37ff8acacfa57caefbf89d77167dc6f5c36896aaf8b1c3",
+      "md5" : "476df38dce227910570d7d1104f49089",
+      "id" : "jakarta.ejb:jakarta.ejb-api:3.2.6",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "jakarta.interceptor:jakarta.interceptor-api:1.2.5", "jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2", "io.quarkus:quarkus-core:2.2.3.Final", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    }, {
+      "type" : "jar",
+      "sha1" : "8db57237778a89834810868c950acaaeeb938ecc",
+      "sha256" : "9194f8ee1927826d34b52ad92196f8a8896095244c05914f5d653e192b92ab66",
+      "md5" : "b8c1b09145e19dfa835c72ac7bfa8e29",
+      "id" : "io.smallrye.reactive:smallrye-mutiny-vertx-runtime:2.13.0",
+      "scopes" : [ "compile" ],
+      "requestedBy" : [ [ "io.smallrye.reactive:smallrye-mutiny-vertx-core:2.13.0", "io.smallrye.reactive:smallrye-mutiny-vertx-web-client:2.13.0", "io.quarkus:quarkus-vault:2.2.3.Final", "org.jfrog.test:multi1:3.7-SNAPSHOT" ] ]
+    } ]
+  }, {
+    "properties" : {
+      "maven.compiler.target" : "1.8",
+      "maven.compiler.source" : "1.8",
+      "project.build.sourceEncoding" : "UTF-8"
+    },
+    "type" : "maven",
+    "id" : "org.jfrog.test:multi:3.7-SNAPSHOT",
+    "repository" : "payment-maven-dev-virtual",
+    "artifacts" : [ {
+      "type" : "pom",
+      "sha1" : "f36a22aacf7312ce88c87b66117655a51922ac5e",
+      "sha256" : "a58cfeb0ae288f33418aa2cd62442081dc0a16168a17cdd11e4394ec184b6223",
+      "md5" : "adc274ec241ac451e521d56dcd03abef",
+      "name" : "multi-3.7-SNAPSHOT.pom",
+      "path" : "org/jfrog/test/multi/3.7-SNAPSHOT/multi-3.7-SNAPSHOT.pom"
+    } ]
+  } ]
+}
