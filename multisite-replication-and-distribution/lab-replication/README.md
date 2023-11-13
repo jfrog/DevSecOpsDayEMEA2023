@@ -1,12 +1,19 @@
-# LAB 3 - Build, Properties and Replication
+# REPLICATION LAB  - Build, Properties and Replication
 
 ## Prerequisites
-- Lab-0 - Configure JFrog CLI
+A working training lab setup
 
 
-# Configure Push Replication
+# Configure a Push Replication
 
-## CREATE REPLICATION TEMPLATE
+In this first part of the lab, we will guide you to set up a push replication between your main and secondary JPDs.
+The main will be the source, and the secondary the destination.
+You will use the [JFrog CLI](https://jfrog.com/getcli/) to perform most of the setup.
+
+## Create the replication template
+
+First we will create a replication template, that contains the specification of the replication that we want to set up.
+
 - Run
 
   ```
@@ -37,8 +44,8 @@
   - Insert the value for syncStatistics (press Tab for options): > `true`
   - Select the next property > `:x`
 
-- Validate template template-push.json is created successfully. `- ls -la`
-- View template
+- Validate template template-push.json is created successfully. `ls -la`
+- Review the generated template
 
       ```json
       {
@@ -53,6 +60,7 @@
         "syncStatistics": "true"
       }
       ```
+Now, we will use this replication definition template, to effectively create a replication.
 - Run
   ```
    jf rt replication-create template-push.json
@@ -60,10 +68,14 @@
 
 <br />
 
+Check using the ui, the results of this command.
 
-# Configure Pull Replication
+# Configure a Pull Replication
 
-## CREATE REPLICATION TEMPLATE
+We will follow basically the same steps as above, but this time to set up a pull replication.
+
+## Create the replication template
+
 - Run
 
   ```
@@ -77,7 +89,7 @@
   ```
 
   - Select replication job type (press Tab for options): `pull`
-  - Enter source repo key > `jftd105lab1-maven-remote`          # Smart Repository (Remote repository pointing other repository from other Artifactory instance)
+  - Enter source repo key > `jftd105lab1-maven-remote`
   - Enter cron expression for frequency (for example, 0 0 12 * * ? will replicate daily) > `*/10 * * * * ?`
   - You can type ":x" at any time to save and exit.
   - Select the next property > `enabled`
@@ -92,10 +104,10 @@
   - Insert the value for syncStatistics (press Tab for options): > `true`
   - Select the next property > `:x`
 
-- Validate template template-pull.json is created successfully. `- ls -la`
+- Validate template template-pull.json is created successfully. `ls -la`
 - View template
 
-      ```json
+```json
       {
         "cronExp": "*/10 * * * * ?",
         "enableEventReplication": "true",
@@ -105,9 +117,28 @@
         "syncProperties": "true",
         "syncStatistics": "true"
       }
-      ```
-- Run
-- Set to swampupsecond instance
+```
+
+Now you must edit the template to specify the orgini of your remote repository.
+We will choose as origin repository `jftd105lab1-maven-dev-local-for-pull`.
+
+It should be similar to (edit of the main JPD domain name) :
+```json
+      {
+        "cronExp": "*/10 * * * * ?",
+        "enableEventReplication": "true",
+        "enabled": "true",
+        "repoKey": "jftd105lab1-maven-remote",
+        "targetRepoKey":"https://dsod23lom1YY.jfrog.io/jftd105lab1-maven-dev-local-for-pull",
+        "syncDeletes": "true",
+        "syncProperties": "true",
+        "syncStatistics": "true"
+      }
+```
+
+Now we will create the pull replication, using this template.
+
+- Set the swampupsecond instance as active
 ```
 jf c use swampupsecond
 ```
@@ -123,9 +154,11 @@ jf c use swampupsecond
 
 
 ## RUN SCRIPT[Optional]
+If things goes bad, or if you are out of time for this lab, run this helper script
+
 - Run 
 ```
-sh lab_1_replication_rescue.sh
+sh lab-1-replication-rescue.sh
 ```
 
 
