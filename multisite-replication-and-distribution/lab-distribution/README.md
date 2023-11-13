@@ -1,4 +1,4 @@
-# DISTROBUTION LAB  - Create a build, a release bundle and distribute it to an edge node.
+# DISTRIBUTION LAB  - Create a build, a release bundle and distribute it to an edge node.
 
 ## Prerequisites
 A working training lab setup
