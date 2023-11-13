@@ -46,7 +46,9 @@ jf rt build-publish payment-maven 2.0.0
   ```
 
 ### CREATE RELEASE BUNDLE
-- STEP 9 : Run 
+- STEP 9 :
+- Go back to the root folder of the lab `cd ../..`
+- Run 
  ```
   jf ds rbc --spec=rb-spec.json rb_swamp 1.0.0 --desc="release candidate"
  ```
