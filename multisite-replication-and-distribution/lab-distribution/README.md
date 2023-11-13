@@ -1,11 +1,17 @@
-# LAB 4 - Distribution of Artifacts
+# DISTROBUTION LAB  - Create a build, a release bundle and distribute it to an edge node.
 
 ## Prerequisites
-- Lab-0 - Configure JFrog CLI
-- Lab-1 - Repository Provisioning
+A working training lab setup
 
+# Configure the  Maven client
+
+First go into the maven project folder
+
+```
 cd ./example/maven-example
-# config Maven
+```
+Then configure maven artifacts resolution
+
 - STEP 1 : Run
   ```
   jf c use swampup
@@ -17,12 +23,12 @@ cd ./example/maven-example
   ```
 
 # Build Maven Project
-- STEP 3 : Run ``jf mvn clean install -f pom.xml --build-name payment-maven --build-number 2.0.0```
+- STEP 3 : Run ```jf mvn clean install -f pom.xml --build-name payment-maven --build-number 2.0.0```
 
 #Collect environment variables.
-- STEP 4 : Run ``jf rt build-collect-env payment-maven 2.0.0```
+- STEP 4 : Run ```jf rt build-collect-env payment-maven 2.0.0```
 #Collect VCS details from git and add them to a build.
-- STEP 5 : Run ``jf rt build-add-git payment-maven 2.0.0```
+- STEP 5 : Run ```jf rt build-add-git payment-maven 2.0.0```
 #Publish build info.
 - STEP 6 : Run 
 ```
@@ -52,8 +58,11 @@ jf rt build-publish payment-maven 2.0.0
   ```
 
 ### DISTRIBUTE RELEASE BUNDLE
+You need to update ``dist-rules.json`` so it will distribute to our own edge.
+Example `dsod23loe107` => Go to `Administration > Platform management > Registered JPDs` to find the name to use.
+
+
 - STEP 11 : Run 
   ```
    jf ds rbd --dist-rules=dist-rules.json rb_swamp 1.0.0
   ```
-    - we need to update ``dist-rules.json`` with our own edge. Example `sup23sjoe106`
