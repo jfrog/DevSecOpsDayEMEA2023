@@ -70,7 +70,7 @@ jf c use swampup
  3. Replace {DevSecOpsDayLondon Second JPD host} with valid value
 
 ```
-jf rt curl -XPUT /api/repositories/jftd105lab3-maven-dev-local -H "Content-Type: application/json" --data '{ "key": "jftd105lab3-maven-dev-local", "rclass": "federated", "packageType": "maven", "members": [ { "url": "https://{DevSecOpsDayLondon JPD host}.jfrog.io/artifactory/jftd105lab3-maven-dev-local", "enabled": true }, { "url": "https://{DevSecOpsDayLondon Edge host}/artifactory/jftd105lab3-maven-dev-local", "enabled": true }, { "url": "https://{DevSecOpsDayLondon Second JPD host}.jfrog.io/artifactory/jftd105lab3-maven-dev-local", "enabled": true } ] }'
+jf rt curl -XPUT /api/repositories/jftd105lab3-maven-dev-local -H "Content-Type: application/json" --data '{ "key": "jftd105lab3-maven-dev-local", "rclass": "federated", "packageType": "maven", "members": [ { "url": "https://{DevSecOpsDayLondon JPD host}.jfrog.io/artifactory/jftd105lab3-maven-dev-local", "enabled": true }, { "url": "https://{DevSecOpsDayLondon Edge host}.jfrog.io/artifactory/jftd105lab3-maven-dev-local", "enabled": true }, { "url": "https://{DevSecOpsDayLondon Second JPD host}.jfrog.io/artifactory/jftd105lab3-maven-dev-local", "enabled": true } ] }'
 ```
 
 ## RUN SCRIPT[Optional]
