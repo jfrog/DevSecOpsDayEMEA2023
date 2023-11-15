@@ -21,6 +21,13 @@ app.get('/', function(req, res) {
     req.query.id = 'Stranger';
   }
   //Object.freeze(Object.prototype);
+
+  //Code Injection
+  //res.render(safeEval('pages/index'),safeEval(req.query));
+  
+  //Template Object Injection
+  //res.render(sanitizeHtml('pages/index',req.query));
+  
   res.render('pages/index',req.query);
 });
 // This api call, can be used to change ejs opts.outputFunctionName, hence creating a webshell 
